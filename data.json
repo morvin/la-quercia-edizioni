@@ -1,1140 +1,592 @@
 {
-  "publisher": {
-    "name": "La Quercia Edizioni",
-    "tagline": "Libri enigmistici tematici per adulti e ragazzi",
-    "lang": "it-IT"
-  },
   "products": [
     {
-      "asin": "B0GW8XXLZH",
-      "title": "Halloween - Parole Intrecciate",
-      "subtitle": "Volume 114 · 80 Crucipuzzle da Brivido",
+      "asin": "B0GWWKYVND",
+      "title": "Ricerca di parole motivazionale per donne - Vol. 131",
+      "subtitle": "Volume 110 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€11.70",
-      "pages": 122,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8255185634",
-      "date": "06/04/2026",
+      "price": "€ 12,51",
       "category": "Parole Intrecciate",
-      "subcategory": "Tematiche Speciali",
-      "tags": ["halloween", "horror", "mostri", "terrore"],
-      "cover": "71KKesBoglL._SL1293_.jpg",
-      "link": "https://www.amazon.it/dp/B0GW8XXLZH",
-      "description": "Entra nel mondo del mistero e del brivido con 80 sfide a crucipuzzle dedicate alla notte più terrificante dell'anno! Un passatempo terribilmente divertente per immergerti nell'atmosfera autunnale.",
-      "features": [
-        "80 cruciverba tematici Halloween",
-        "Caratteri grandi per una lettura confortevole",
-        "Pagine da colorare e labirinti bonus",
-        "Soluzioni incluse",
-        "Formato 21.59 x 27.94 cm"
-      ],
-      "chapters": [
-        {"title": "Le Origini e le Tradizioni", "description": "Dai Celti alla festa di oggi: zucche intagliate, dolcetti e gatti neri."},
-        {"title": "Creature della Notte", "description": "Vampiri, licantropi e zombie: i mostri classici dell'horror."},
-        {"title": "Luoghi e Atmosfere Spettrali", "description": "Case infestate, cimiteri abbandonati e nebbia fitta."},
-        {"title": "Magia e Paure", "description": "Streghe, pozioni magiche e le paure più profonde."}
-      ]
-    },
-    {
-      "asin": "B0GW867JGZ",
-      "title": "L'Odissea - Parole Intrecciate",
-      "subtitle": "Volume 126 · 80 Crucipuzzle",
-      "author": "Bluetip Morley",
-      "publisher": "La Quercia Edizioni",
-      "price": "€12.90",
-      "pages": 122,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8255138821",
-      "date": "06/04/2026",
-      "category": "Parole Intrecciate",
-      "subcategory": "Cultura Italiana",
-      "tags": ["odissea", "omer", "mitologia", "grecia", "ulisse"],
-      "cover": "81yPgKe7YLL._SL1293_.jpg",
-      "link": "https://www.amazon.it/dp/B0GW867JGZ",
-      "description": "Un affascinante libro di crucipuzzle a tema Odissea. Questo volume contiene 80 cruciverba tematici che seguono cronologicamente il lungo viaggio di Ulisse verso Itaca. Perfetto per gli amanti della mitologia e della letteratura.",
-      "features": [
-        "80 crucipuzzle tematici sull'Odissea di Omero",
-        "4 capitoli narrativi che seguono il viaggio di Ulisse",
-        "1600 parole da scoprire",
-        "Caratteri grandi per una lettura confortevole",
-        "Pagine da colorare e labirinti bonus",
-        "Soluzioni incluse alla fine del volume"
-      ],
-      "chapters": [
-        {"title": "La Partenza e i Primi Ostacoli", "description": "Dalla guerra di Troia al lungo viaggio verso casa."},
-        {"title": "Magia, Mostri e l'Oltretomba", "description": "Circe, Polifemo, Ciclopi e il viaggio nell'Ade."},
-        {"title": "I Feaci e i Racconti", "description": "L'approdo nell'isola dei Feaci e i racconti di Ulisse."},
-        {"title": "Itaca, l'Arco e la Vendetta", "description": "Il ritorno a casa, il riconoscimento e la vendetta sui Proci."}
-      ]
-    },
-    {
-      "asin": "B0GW8B1RCP",
-      "title": "Il Corpo Umano - Parole Intrecciate",
-      "subtitle": "Volume 123 · 80 Crucipuzzle",
-      "author": "Bluetip Morley",
-      "publisher": "La Quercia Edizioni",
-      "price": "€9.99",
-      "pages": 122,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8255116188",
-      "date": "06/04/2026",
-      "category": "Parole Intrecciate",
-      "subcategory": "Scienze",
-      "tags": ["corpo umano", "anatomia", "biologia", "scienza"],
-      "cover": "corpo-umano-cover.jpg",
-      "link": "https://www.amazon.it/dp/B0GW8B1RCP",
-      "description": "Alla scoperta dei segreti dell'anatomia e della biologia. Un viaggio affascinante attraverso il corpo umano in 80 sfide enigmistiche.",
-      "features": [
-        "80 crucipuzzle tematici di anatomia",
-        "1600 parole da scoprire",
-        "4 capitoli: Ossa, Muscoli, Organi, Cervello",
-        "Caratteri grandi per una lettura confortevole",
-        "Pagine da colorare e labirinti bonus",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Ossa, Muscoli e Movimento", "description": "Lo scheletro, i muscoli e come ci muoviamo."},
-        {"title": "Organi e Sistemi Vitali", "description": "Cuore, polmoni, fegato e gli altri organi."},
-        {"title": "Il Cervello e i Sensi", "description": "Come pensiamo, vediamo, sentiamo e tocchiamo."},
-        {"title": "Cellule, DNA e Salute", "description": "La vita a livello microscopico."}
-      ]
+      "cover": "https://m.media-amazon.com/images/I/B0GWWKYVND._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GWWKYVND",
+      "description": "Ricerca di parole motivazionale per donne - Vol. 131 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GWXCHYRD",
-      "title": "Storia d'Italia - Ricerca Parole",
-      "subtitle": "80 Schemi Tematici",
+      "title": "Storia d'Italia - ricerca parole",
+      "subtitle": "Volume 111 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.99",
-      "pages": 126,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8257035197",
-      "date": "12/04/2026",
+      "price": "€ 12,99",
       "category": "Parole Intrecciate",
-      "subcategory": "Cultura Italiana",
-      "tags": ["storia", "italia", "romani", "medioevo", "rinascimento"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GWXCHYRD._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GWXCHYRD",
-      "description": "Un affascinante viaggio nel tempo dai Romani al Rinascimento fino all'Età Moderna. 80 schemi tematici in ordine cronologico.",
-      "features": [
-        "80 schemi tematici in ordine cronologico",
-        "1600 parole da scoprire",
-        "Caratteri Grandi e Leggibili",
-        "Disegni storici da colorare",
-        "Labirinti procedurali bonus",
-        "Soluzioni complete incluse"
-      ],
-      "chapters": [
-        {"title": "L'Impero Romano", "description": "Dalle strade basolate alle legioni, dalla Repubblica all'Impero."},
-        {"title": "Il Medioevo e i Liberi Comuni", "description": "Castelli, abbazie, Comuni e Signorie."},
-        {"title": "Il Rinascimento e le Scoperte", "description": "Dalle tele immortali alle grandi esplorazioni."},
-        {"title": "Dal Risorgimento all'Italia Moderna", "description": "Le camicie rosse, l'Unità e la costruzione della nazione."}
-      ]
+      "description": "Storia d'Italia - ricerca parole - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GW8B1RCP",
+      "title": "Parole Intrecciate - Il Corpo Umano: Vol. 123",
+      "subtitle": "Volume 112 - Libri enigmistici",
+      "author": "Bluetip Morley",
+      "publisher": "La Quercia Edizioni",
+      "price": "€ 9,99",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GW8B1RCP._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GW8B1RCP",
+      "description": "Parole Intrecciate - Il Corpo Umano: Vol. 123 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GW8XXLZH",
+      "title": "Halloween - Parole Intrecciate: Volume 114",
+      "subtitle": "Volume 113 - Libri enigmistici",
+      "author": "Bluetip Morley",
+      "publisher": "La Quercia Edizioni",
+      "price": "€ 11,70",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GW8XXLZH._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GW8XXLZH",
+      "description": "Halloween - Parole Intrecciate: Volume 114 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GX163FJ6",
-      "title": "La Campania - Parole Intrecciate",
-      "subtitle": "Volume 128 · 80 Crucipuzzle",
+      "title": "La Campania - Parole intrecciate",
+      "subtitle": "Volume 114 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 122,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8255865499",
-      "date": "13/04/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Geografia e Viaggi",
-      "tags": ["campania", "napoli", "pomeri", "costiera amalfitana"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GX163FJ6._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GX163FJ6",
-      "description": "Alla scoperta di Napoli, Pompei e la Costiera Amalfitana. Un viaggio attraverso la regione più affascinante d'Italia.",
-      "features": [
-        "80 crucipuzzle tematici sulla Campania",
-        "1600 parole da scoprire",
-        "4 capitoli: Napoli, Storia, Costa, Tradizioni",
-        "Pagine da colorare e labirinti bonus",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Napoli e il suo Golfo", "description": "I vicoli, la pizza, il Vesuvio."},
-        {"title": "Storia e Miti", "description": "Da Pompei alla mitologia greca."},
-        {"title": "La Costa e il Cilento", "description": "Amalfi, Positano, Praiano."},
-        {"title": "Sapori, Arte e Tradizioni", "description": "La cultura napoletana e campana."}
-      ]
+      "description": "La Campania - Parole intrecciate - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GWQ1H57R",
-      "title": "Kamasutra per Coppie - Parole Intrecciate",
-      "subtitle": "80 Schemi Sensuali",
+      "title": "Kamasutra per Coppie: Parole Intrecciate",
+      "subtitle": "Volume 115 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.90",
-      "pages": 124,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8255650545",
-      "date": "10/04/2026",
+      "price": "€ 12,90",
       "category": "Parole Intrecciate",
-      "subcategory": "Tematiche Speciali",
-      "tags": ["kamasutra", "coppie", "intimita", "erotismo"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GWQ1H57R._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GWQ1H57R",
-      "description": "80 schemi sensuali, giochi erotici e posizioni per ritrovare l'intimità. Un regalo perfetto per San Valentino.",
-      "features": [
-        "80 schemi tematici per coppie",
-        "Kamasutra, Tantra e giochi dei sensi",
-        "4 capitoli: Seduzione, Posizioni, Fantasie, Connessione",
-        "Gioco di coppia con due penne colorate",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "L'Arte della Seduzione", "description": "Preliminari, atmosfera e regole dell'attrazione."},
-        {"title": "Le Geometrie del Piacere", "description": "Posizioni classiche del Kamasutra da provare insieme."},
-        {"title": "Giochi, Sensi e Fantasie", "description": "Idee speziate per uscire dalla routine."},
-        {"title": "Connessione Tantrica", "description": "Respiro, sguardi e unione spirituale."}
-      ]
+      "description": "Kamasutra per Coppie: Parole Intrecciate - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GWX8T9TW",
+      "title": "Kamasutra for Couples: Word Search",
+      "subtitle": "Volume 116 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$12,99",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GWX8T9TW._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GWX8T9TW",
+      "description": "Kamasutra for Couples: Word Search - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GW8J4JYH",
-      "title": "L'Iliade - Parole Intrecciate",
-      "subtitle": "Volume 125",
+      "title": "L'Iliade - Parole Intrecciate: Vol. 125",
+      "subtitle": "Volume 117 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.99",
-      "pages": 122,
-      "format": "21.59 x 27.94 cm",
-      "date": "06/04/2026",
+      "price": "€ 12,99",
       "category": "Parole Intrecciate",
-      "subcategory": "Cultura Italiana",
-      "tags": ["iliade", "omer", "mitologia", "grecia", "troia"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GW8J4JYH._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GW8J4JYH",
-      "description": "Un viaggio epico attraverso l'Iliade di Omero. 80 sfide enigmistiche dedicate alla guerra di Troia e ai suoi eroi.",
-      "features": [
-        "80 crucipuzzle tematici sull'Iliade",
-        "Eroi omerici: Achille, Ettore, Agamennone",
-        "Caratteri grandi per una lettura confortevole",
-        "Pagine da colorare e labirinti bonus",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "La Mela d'Oro e l'Ira di Achille", "description": "Il conflitto che dà inizio alla guerra."},
-        {"title": "Gli Eroi in Battaglia", "description": "Duelli, strategie e battaglie epiche."},
-        {"title": "Dei e Destini", "description": "L'intervento divino nelle vicende umane."},
-        {"title": "La Caduta di Troia", "description": "Il cavallo, il tradimento e la fine della città."}
-      ]
+      "description": "L'Iliade - Parole Intrecciate: Vol. 125 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
-      "asin": "B0GWWKYVND",
-      "title": "Ricerca di Parole Motivazionale per Donne",
-      "subtitle": "Volume 131 · I Quattro Elementi",
+      "asin": "B0GW867JGZ",
+      "title": "L'Odissea - Parole Intrecciate: Vol. 126",
+      "subtitle": "Volume 118 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.51",
-      "pages": 124,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8255952083",
-      "date": "12/04/2026",
+      "price": "€ 12,90",
       "category": "Parole Intrecciate",
-      "subcategory": "Tematiche Speciali",
-      "tags": ["donne", "motivazionale", "mindfulness", "quattro elementi"],
-      "cover": "",
-      "link": "https://www.amazon.it/dp/B0GWWKYVND",
-      "description": "Sollievo mentale con citazioni motivazionali e 80 schemi. Citazioni di donne straordinarie: Chanel, Woolf, Kahlo...",
-      "features": [
-        "80 schemi tematici motivazionali",
-        "Citazioni di donne straordinarie",
-        "1600 parole per la mindfulness",
-        "4 elementi: Acqua, Fuoco, Aria, Terra",
-        "Disegni antistress e labirinti bonus"
-      ],
-      "chapters": [
-        {"title": "L'Acqua", "description": "Fluidezza, emozioni e respirazione."},
-        {"title": "Il Fuoco", "description": "Passione, forza e determinazione."},
-        {"title": "L'Aria", "description": "Libertà, pensieri e leggerezza."},
-        {"title": "La Terra", "description": "Radici, stabilità e connessione."}
-      ]
+      "cover": "https://m.media-amazon.com/images/I/B0GW867JGZ._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GW867JGZ",
+      "description": "L'Odissea - Parole Intrecciate: Vol. 126 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GWGQVNZT",
+      "title": "Mindfulness Word Search for Adults Large Print",
+      "subtitle": "Volume 119 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$13,60",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GWGQVNZT._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GWGQVNZT",
+      "description": "Mindfulness Word Search for Adults Large Print - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GWFK7FXK",
       "title": "Mindfulness Parole Intrecciate per Adulti",
-      "subtitle": "Large Print Edition",
+      "subtitle": "Volume 120 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.90",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "07/04/2026",
+      "price": "€ 12,90",
       "category": "Parole Intrecciate",
-      "subcategory": "Tematiche Speciali",
-      "tags": ["mindfulness", "relax", "antistress", "grandi caratteri"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GWFK7FXK._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GWFK7FXK",
-      "description": "Rilassamento e benessere mentale attraverso l'enigmistica. Un passatempo rilassante per adulti con grandi caratteri.",
-      "features": [
-        "80 schemi tematici per la mindfulness",
-        "Grandi caratteri per una lettura confortevole",
-        "Tecniche di rilassamento",
-        "Pagine da colorare antistress",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Respirazione e Presenza", "description": "Il potere del respiro consapevole."},
-        {"title": "Gratitudine e Accettazione", "description": "Apprezzare il momento presente."},
-        {"title": "Calma e Silenzio", "description": "Trovare la pace interiore."},
-        {"title": "Connessione Corpo-Mente", "description": "Armonia tra pensieri e sensazioni."}
-      ]
+      "description": "Mindfulness Parole Intrecciate per Adulti - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GW64Q2XC",
-      "title": "Parole Intrecciate - La Divina Commedia",
-      "subtitle": "Volume 124 · Edizione Speciale 100 Crucipuzzle",
+      "title": "Parole Intrecciate - La Divina Commedia: Vol. 124",
+      "subtitle": "Volume 121 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€9.99",
-      "pages": 147,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8255051571",
-      "date": "05/04/2026",
+      "price": "€ 9,99",
       "category": "Parole Intrecciate",
-      "subcategory": "Cultura Italiana",
-      "tags": ["divina commedia", "dante", "inferno", "purgatorio", "paradiso"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GW64Q2XC._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GW64Q2XC",
-      "description": "Un'avventura enigmistica basata sull'intero capolavoro di Dante Alighieri. Per la prima volta, l'intera Divina Commedia viene trasformata in un passatempo rilassante, intelligente e culturalmente ricco. Contiene esattamente 100 schemi, uno per ogni canto.",
-      "features": [
-        "100 Schemi tematici, uno per ogni canto",
-        "Le tre cantiche: Inferno, Purgatorio, Paradiso",
-        "2000 parole da scoprire",
-        "Caratteri Grandi e Leggibili",
-        "Disegni da colorare tematici e labirinti",
-        "Soluzioni complete"
-      ],
-      "chapters": [
-        {"title": "Inferno (Canti 1-34)", "description": "Il viaggio di Dante attraverso i cerchi dell'Inferno."},
-        {"title": "Purgatorio (Canti 1-33)", "description": "La salita verso il Purgatorio e la redenzione."},
-        {"title": "Paradiso (Canti 1-33)", "description": "L'ascesa verso la luce divina."}
-      ]
+      "description": "Parole Intrecciate - La Divina Commedia: Vol. 124 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GW8JH3QF",
       "title": "Parole Intrecciate Giardinaggio Antistress",
-      "subtitle": "80 Puzzle per Amanti del Verde",
+      "subtitle": "Volume 122 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€10.99",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "06/04/2026",
+      "price": "€ 10,99",
       "category": "Parole Intrecciate",
-      "subcategory": "Tematiche Speciali",
-      "tags": ["giardinaggio", "verde", "piante", "antistress"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GW8JH3QF._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GW8JH3QF",
-      "description": "Un passatempo verde e rigenerante per gli amanti del giardinaggio. Scopri piante, fiori e tecniche di coltivazione.",
-      "features": [
-        "80 schemi tematici sul giardinaggio",
-        "Piante, fiori e ortaggi",
-        "Tecniche di coltivazione",
-        "Caratteri grandi per una lettura confortevole",
-        "Pagine da colorare",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Fiori e Piante Ornamentali", "description": "Rose, orchidee, tulipani e molto altro."},
-        {"title": "Orto e Frutteto", "description": "Coltivare i propri frutti e ortaggi."},
-        {"title": "Giardini e Paesaggi", "description": "Progettare e mantenere il proprio spazio verde."},
-        {"title": "Stagioni e Cura delle Piante", "description": "Quando piantare, potare e raccogliere."}
-      ]
+      "description": "Parole Intrecciate Giardinaggio Antistress - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GJN479QL",
       "title": "Italia Anni '90: Storie, Cronaca e Pop Culture",
-      "subtitle": "Parole Intrecciate",
+      "subtitle": "Volume 123 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€4.96",
-      "pages": 80,
-      "format": "21.59 x 27.94 cm",
-      "date": "03/04/2026",
+      "price": "€ 4,96",
       "category": "Parole Intrecciate",
-      "subcategory": "Anni '90/'80/'70/'60",
-      "tags": ["anni 90", "nostalgia", "italia", "pop culture"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GJN479QL._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GJN479QL",
-      "description": "Un tuffo negli anni '90 italiani! TV, musica, sport, costume: tutto quello che ha reso indimenticabile quel decennio.",
-      "features": [
-        "80 schemi tematici sugli anni '90",
-        "TV, musica, sport e costume",
-        "Personaggi iconici del decennio",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "TV e Intrattenimento", "description": "I programmi che hanno fatto la storia."},
-        {"title": "Musica e Concerti", "description": "Le canzoni che hanno dominato le classifiche."},
-        {"title": "Sport e Vittorie", "description": "I trionfi dell'Italia sportiva."},
-        {"title": "Moda e Lifestyle", "description": "Tendenze e stili di vita degli anni '90."}
-      ]
+      "description": "Italia Anni '90: Storie, Cronaca e Pop Culture - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GW5XQYDG",
       "title": "Astronomia Parole Intrecciate per Adulti",
-      "subtitle": "Alla Scoperta dell'Universo",
+      "subtitle": "Volume 124 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "05/04/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Scienze",
-      "tags": ["astronomia", "stelle", "pianeti", "spazio", "universo"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GW5XQYDG._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GW5XQYDG",
-      "description": "Viaggio affascinante attraverso stelle, pianeti e misteri dell'universo. 80 sfide per gli amanti del cielo stellato.",
-      "features": [
-        "80 schemi tematici di astronomia",
-        "Stelle, pianeti e galassie",
-        "Missioni spaziali e astronauti",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Il Sistema Solare", "description": "Pianeti, satelliti e il Sole."},
-        {"title": "Stelle e Costellazioni", "description": "Dal nostro Sole alle stelle più luminose."},
-        {"title": "Galassie e Cosmologia", "description": "La struttura dell'universo."},
-        {"title": "Esplorazione Spaziale", "description": "Dalla Luna a Marte e oltre."}
-      ]
+      "description": "Astronomia Parole Intrecciate per Adulti - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GW2SBBYP",
+      "title": "The Ocean Word Search Book for Adults",
+      "subtitle": "Volume 125 - Libri enigmistici",
+      "author": "Oak Publisher",
+      "publisher": "La Quercia Edizioni",
+      "price": "$13,40",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GW2SBBYP._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GW2SBBYP",
+      "description": "The Ocean Word Search Book for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GW2PQPVL",
+      "title": "Italian Cuisine Word Search Book for Adults",
+      "subtitle": "Volume 126 - Libri enigmistici",
+      "author": "Oak Publisher",
+      "publisher": "La Quercia Edizioni",
+      "price": "$13,60",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GW2PQPVL._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GW2PQPVL",
+      "description": "Italian Cuisine Word Search Book for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GW2JJS72",
+      "title": "Spring Word Search Book for Adults",
+      "subtitle": "Volume 127 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$13,60",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GW2JJS72._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GW2JJS72",
+      "description": "Spring Word Search Book for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GVYY6CK5",
+      "title": "1980s Pop Culture Word Search for Adults",
+      "subtitle": "Volume 128 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$12,00",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GVYY6CK5._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GVYY6CK5",
+      "description": "1980s Pop Culture Word Search for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GVSKMLS6",
+      "title": "Classic Cowboy Word Search for Adults",
+      "subtitle": "Volume 129 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$14,00",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GVSKMLS6._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GVSKMLS6",
+      "description": "Classic Cowboy Word Search for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GVSQJHH6",
+      "title": "Cat Lovers Word Search for Adults",
+      "subtitle": "Volume 130 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$14,00",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GVSQJHH6._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GVSQJHH6",
+      "description": "Cat Lovers Word Search for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GV44RKCH",
+      "title": "Italian Cuisine Word Search for Adults",
+      "subtitle": "Volume 131 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$14,00",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GV44RKCH._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GV44RKCH",
+      "description": "Italian Cuisine Word Search for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GV49V5JX",
+      "title": "Spring Word Search for Adults",
+      "subtitle": "Volume 132 - Libri enigmistici",
+      "author": "Oak Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$12,00",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GV49V5JX._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GV49V5JX",
+      "description": "Spring Word Search for Adults - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0GV3RNNXL",
+      "title": "Ocean word search: 80 Themed Puzzles",
+      "subtitle": "Volume 133 - Libri enigmistici",
+      "author": "Quercia Publishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "$12,00",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0GV3RNNXL._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0GV3RNNXL",
+      "description": "Ocean word search: 80 Themed Puzzles - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTYG6K1Z",
-      "title": "Bibbia - Parole Intrecciate",
-      "subtitle": "80 Sfide Enigmistiche a Tema",
+      "title": "Bibbia - Parole intrecciate",
+      "subtitle": "Volume 134 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8253325490",
-      "date": "26/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Tematiche Speciali",
-      "tags": ["bibbia", "religione", "testamento", "spiritualita"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTYG6K1Z._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTYG6K1Z",
-      "description": "Un viaggio spirituale e storico attraverso il Libro dei Libri in 80 sfide enigmistiche. Dalla Creazione all'Apocalisse.",
-      "features": [
-        "80 Schemi tematici accuratamente selezionati",
-        "Antico e Nuovo Testamento",
-        "Formato grande e leggibile",
-        "Soluzioni incluse",
-        "4 sezioni cronologiche"
-      ],
-      "chapters": [
-        {"title": "Genesi e Patriarchi", "description": "Dalla Creazione all'Arca di Noè."},
-        {"title": "Re, Profeti e Regni", "description": "Il regno di Davide e Salomone."},
-        {"title": "La Vita di Gesù", "description": "Parabole, miracoli e insegnamenti."},
-        {"title": "Passione e Apocalisse", "description": "Dalla Crocifissione alle visioni di Patmos."}
-      ]
+      "description": "Bibbia - Parole intrecciate - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTHQXNK7",
       "title": "Parole Intrecciate Cucina Italiana",
-      "subtitle": "80 Crucipuzzle su Ricette Tradizionali",
+      "subtitle": "Volume 135 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "isbn": "979-8252500560",
-      "date": "22/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Tematiche Speciali",
-      "tags": ["cucina", "italiana", "ricette", "pasta", "dolci"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTHQXNK7._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTHQXNK7",
-      "description": "Riscopri i sapori che hanno reso grande l'Italia nel mondo! Un goloso viaggio attraverso 80 schemi tematici dedicati alla nostra tradizione culinaria.",
-      "features": [
-        "80 schemi tematici sulla cucina italiana",
-        "Pasta, ricette tradizionali e dolci",
-        "1600 parole da scoprire",
-        "Grandi caratteri per una lettura confortevole",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Primi Piatti e Pasta", "description": "Spaghetti, risotto, lasagne e molto altro."},
-        {"title": "Secondi, Carne e Pesce", "description": "I piatti più amati della tradizione."},
-        {"title": "Pizze e Street Food", "description": "Da Napoli a tutta Italia."},
-        {"title": "Dolci e Tradizioni", "description": "Torte, gelati e prelibatezze regionali."}
-      ]
+      "description": "Parole Intrecciate Cucina Italiana - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTF4YRFP",
       "title": "Miti e Leggende - Parole Intrecciate",
-      "subtitle": "Dagli Dei Greci ai Miti Nordici",
+      "subtitle": "Volume 136 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "21/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Cultura Italiana",
-      "tags": ["miti", "leggende", "dei", "greci", "nordici", "fantasy"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTF4YRFP._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTF4YRFP",
-      "description": "Un viaggio attraverso i miti e le leggende che hanno affascinato l'umanità. Dei greci, eroi nordici e storie senza tempo.",
-      "features": [
-        "80 schemi tematici su miti e leggende",
-        "Dei greci, romani e nordici",
-        "Eroi, mostri e creature magiche",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Dei dell'Olimpo", "description": "Zeus, Atena, Apollo e gli altri dei."},
-        {"title": "Eroi e Avventure", "description": "Ercole, Perseo, Teseo e le loro imprese."},
-        {"title": "Creature Mitologiche", "description": "Medusa, Minotauro, Fenice e altre."},
-        {"title": "Miti Nordici", "description": "Odino, Thor e il mondo vichingo."}
-      ]
+      "description": "Miti e Leggende - Parole Intrecciate - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTDSRMPB",
-      "title": "Giappone - Parole Intrecciate",
-      "subtitle": "80 Sfide nella Terra del Sol Levante",
+      "title": "Giappone - parole intrecciate",
+      "subtitle": "Volume 137 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "21/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Geografia e Viaggi",
-      "tags": ["giappone", "sol levante", "cultura", "tradizioni"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTDSRMPB._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTDSRMPB",
-      "description": "Alla scoperta del Giappone: tradizioni millenarie, samurai, geishe, ninja e la cultura che ha affascinato il mondo intero.",
-      "features": [
-        "80 schemi tematici sul Giappone",
-        "Tradizioni, samurai e geishe",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Storia e Imperatori", "description": "Dai samurai ai giorni nostri."},
-        {"title": "Arte e Letteratura", "description": "Haiku, ukiyo-e e arti marziali."},
-        {"title": "Tradizioni e Festività", "description": "Hanami, matsuri e cerimonie."},
-        {"title": "Cucina e Vita Quotidiana", "description": "Sushi, tatami e mucho más."}
-      ]
+      "description": "Giappone - parole intrecciate - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTL64N8Q",
       "title": "Crucipuzzle d'Inverno",
-      "subtitle": "80 Sfide per la Stagione Fredda",
+      "subtitle": "Volume 138 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€10.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "23/03/2026",
+      "price": "€ 10,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Stagioni",
-      "tags": ["inverno", "natale", "neve", "stagione"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTL64N8Q._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTL64N8Q",
-      "description": "80 sfide tematiche per la stagione più magica dell'anno. Natale, neve, caldo cioccolato e serate sul divano.",
-      "features": [
-        "80 schemi tematici d'inverno",
-        "Natale, Capodanno e Befana",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Natale e le Feste", "description": "Albero, regali e panettone."},
-        {"title": "Inverno e Neve", "description": "Sci, ciaspole e paesaggi innevati."},
-        {"title": "Serate d'Inverno", "description": "Cinema, libri e caldo cioccolato."},
-        {"title": "Capodanno e Nuovo Anno", "description": "Buoni propositi e festeggiamenti."}
-      ]
+      "description": "Crucipuzzle d'Inverno - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTL5YNZ4",
-      "title": "Italia Anni '60 - Crucipuzzle",
-      "subtitle": "80 Ricordi di un Decennio Magico",
+      "title": "Italia anni '60 - Crucipuzzle",
+      "subtitle": "Volume 139 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "23/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Anni '90/'80/'70/'60",
-      "tags": ["anni 60", "boom economico", "italia", "nostalgia"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTL5YNZ4._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTL5YNZ4",
-      "description": "Riscopri il boom economico, i miti del calcio, la dolce vita e tutto quello che ha reso indimenticabili gli anni '60 italiani.",
-      "features": [
-        "80 schemi tematici sugli anni '60",
-        "Boom economico e Made in Italy",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Il Boom Economico", "description": "Motorini, televisione e benessere."},
-        {"title": "Cinema e Canzoni", "description": "Divo e Mina, i miti dell'epoca."},
-        {"title": "Sport e Vittorie", "description": "Il calcio trionfa."},
-        {"title": "Moda e Lifestyle", "description": "Mini gonne, Beatles e tanto altro."}
-      ]
+      "description": "Italia anni '60 - Crucipuzzle - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTHBVH57",
       "title": "Parole Intrecciate Autunno",
-      "subtitle": "80 Sfide tra Foglie e Nebbie",
+      "subtitle": "Volume 140 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "22/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Stagioni",
-      "tags": ["autunno", "foglie", "castagne", "stagione"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTHBVH57._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTHBVH57",
-      "description": "80 sfide per la stagione dei colori caldi, delle castagne e dei primi freddi. L'autunno come non lo hai mai vissuto.",
-      "features": [
-        "80 schemi tematici d'autunno",
-        "Castagne, funghi e vendemmia",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Colori dell'Autunno", "description": "Foglie rosse e paesaggi dorati."},
-        {"title": "Sapori di Stagione", "description": "Castagne, funghi e tartufi."},
-        {"title": "Tradizioni Autunnali", "description": "Feste paesane e sagre."},
-        {"title": "Natura e Animali", "description": "La fauna autunnale."}
-      ]
+      "description": "Parole Intrecciate Autunno - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTGQ5JFS",
-      "title": "Crucipuzzle Italia Anni '80",
-      "subtitle": "80 Ricordi di un Decennio Prodigioso",
+      "title": "Crucipuzzle Italia anni '80",
+      "subtitle": "Volume 141 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "22/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Anni '90/'80/'70/'60",
-      "tags": ["anni 80", "paninari", "scooter", "italia"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTGQ5JFS._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTGQ5JFS",
-      "description": "Torna negli anni '80 con paninari, Radio Deejay, Vespa e tanto hairstyling. Gli anni più trash e luminosi!",
-      "features": [
-        "80 schemi tematici sugli anni '80",
-        "Paninari, musiche yuppy e tanto colore",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Paninari e Mode", "description": "Vespa, giubbotti e anfibi."},
-        {"title": "Musica e Concerti", "description": "Depeche Mode,90_e tanto synth."},
-        {"title": "Cinema e TV", "description": "Miami Vice, Drive In, Berma."},
-        {"title": "Sport e Successi", "description": "Italia '90 e tanto sport."}
-      ]
+      "description": "Crucipuzzle Italia anni '80 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTGT64SJ",
       "title": "Crucipuzzle Italia Anni 70",
-      "subtitle": "80 Ricordi di un Decennio di Cambiamento",
+      "subtitle": "Volume 142 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "22/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Anni '90/'80/'70/'60",
-      "tags": ["anni 70", "hippy", "70", "italia", "sessantotto"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTGT64SJ._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTGT64SJ",
-      "description": "Riscopri gli anni della contestazione, dei fiori nei capelli, della musica rock e di un'Italia che cambiava.",
-      "features": [
-        "80 schemi tematici sugli anni '70",
-        "Sessantotto, hippies e rock",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Il Sessantotto", "description": "Contestazione e cambiamenti."},
-        {"title": "Musica e Concerti", "description": "Beatles, rock e progressive."},
-        {"title": "Cinema d'Autore", "description": "Fellini, Bertolucci e tanto cinema."},
-        {"title": "Moda e Lifestyle", "description": "Fiori nei capelli e tanto colore."}
-      ]
+      "description": "Crucipuzzle Italia Anni 70 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GTDNBFR4",
       "title": "Parole Intrecciate Primavera",
-      "subtitle": "80 Sfide tra Fiori e Rinascita",
+      "subtitle": "Volume 143 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "21/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Stagioni",
-      "tags": ["primavera", "fiori", "pasqua", "stagione"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GTDNBFR4._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GTDNBFR4",
-      "description": "80 sfide per la stagione della rinascita. Fiori, Pasqua, sole e nuova energia.",
-      "features": [
-        "80 schemi tematici di primavera",
-        "Fiori, Pasqua e rinascita",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "La Natura si Sveglia", "description": "Fiori, gemme e nuovi frutti."},
-        {"title": "Pasqua e Tradizioni", "description": "Uova, colombe e tanto cioccolato."},
-        {"title": "Feste e Celebrazioni", "description": "25 Aprile, 1 Maggio e ponti di primavera."},
-        {"title": "Attività all'Aria Aperta", "description": "Giardinaggio, passeggiate e tanto sole."}
-      ]
+      "description": "Parole Intrecciate Primavera - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GT3361QG",
       "title": "Parole Intrecciate Estate",
-      "subtitle": "80 Sfide tra Sole e Mare",
+      "subtitle": "Volume 144 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 104,
-      "format": "21.59 x 27.94 cm",
-      "date": "19/03/2026",
+      "price": "€ 12,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Stagioni",
-      "tags": ["estate", "mare", "vacanza", "stagione"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GT3361QG._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GT3361QG",
-      "description": "80 sfide per la stagione più calda dell'anno. Mare, gelato, sole e vacanze indimenticabili.",
-      "features": [
-        "80 schemi tematici d'estate",
-        "Mare, spiaggia e vacanze",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Mare e Spiagge", "description": "Costa, scogli e tanto sole."},
-        {"title": "Vacanza e Viaggi", "description": "Destinazioni da sogno."},
-        {"title": "Sapori d'Estate", "description": "Gelato, granite e tanto fresco."},
-        {"title": "Feste e Notti Estive", "description": "Festa della Repubblica, Ferragosto e tanto altro."}
-      ]
+      "description": "Parole Intrecciate Estate - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GQQF238P",
-      "title": "Capolavori della Letteratura - Volume 2",
-      "subtitle": "Parole Intrecciate",
+      "title": "Capolavori della Letteratura - Vol. 2",
+      "subtitle": "Volume 145 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€14.00",
-      "pages": 124,
-      "format": "21.59 x 27.94 cm",
-      "date": "01/03/2026",
+      "price": "€ 14,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Cultura Italiana",
-      "tags": ["letteratura", "classici", "libri", "cultura"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GQQF238P._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GQQF238P",
-      "description": "I grandi classici della letteratura mondiale in 80 sfide enigmistiche. Da Shakespeare a Tolstoj, da Cervantes a Dostoevskij.",
-      "features": [
-        "80 schemi tematici di letteratura",
-        "Classici mondiali della narrativa",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Letteratura Inglese", "description": "Shakespeare, Dickens, Austen."},
-        {"title": "Letteratura Russa", "description": "Tolstoj, Dostoevskij, Cechov."},
-        {"title": "Letteratura Francese", "description": "Hugo, Flaubert, Camus."},
-        {"title": "Letteratura Spagnola e Americana", "description": "Cervantes, Garcia Marquez e tanto altro."}
-      ]
+      "description": "Capolavori della Letteratura - Vol. 2 - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GQZMN6PN",
       "title": "Capolavori della Letteratura",
-      "subtitle": "Parole Intrecciate - Volume 1",
+      "subtitle": "Volume 146 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€14.00",
-      "pages": 124,
-      "format": "21.59 x 27.94 cm",
-      "date": "03/03/2026",
+      "price": "€ 14,00",
       "category": "Parole Intrecciate",
-      "subcategory": "Cultura Italiana",
-      "tags": ["letteratura", "classici", "libri", "cultura"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GQZMN6PN._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GQZMN6PN",
-      "description": "I più grandi capolavori della letteratura in sfide enigmistiche. Un modo intelligente per riscoprire i classici.",
-      "features": [
-        "80 schemi tematici di letteratura",
-        "Classici senza tempo",
-        "Caratteri grandi",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Poesia e Teatro", "description": "Dante, Petrarca e i grandi drammaturghi."},
-        {"title": "Romanzo Moderno", "description": "I grandi romanzieri del '900."},
-        {"title": "Letteratura Italiana", "description": "Manzoni, Leopardi, Pirandello."},
-        {"title": "Classici Universali", "description": "Mille e una notte, favole e tanto altro."}
-      ]
+      "description": "Capolavori della Letteratura - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GPX8S58H",
       "title": "Bologna Diario di Viaggio",
-      "subtitle": "La Rossa, la Grassa, la Dotta",
+      "subtitle": "Volume 147 - Libri enigmistici",
       "author": "Vincenzo Morello",
       "publisher": "La Quercia Edizioni",
-      "price": "€14.42",
-      "pages": 120,
-      "format": "15 x 21 cm",
-      "date": "24/02/2026",
+      "price": "€ 14,42",
       "category": "Diari di Viaggio",
-      "subcategory": "Italia",
-      "tags": ["bologna", "viaggio", "diario", "emilia romagna"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GPX8S58H._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GPX8S58H",
-      "description": "Un diario di viaggio completo per esplorare Bologna: le torri, i portici, la cucina e tutto ciò che rende unica la città felsinea.",
-      "features": [
-        "Pagine per appunti e disegni",
-        "Mappe e informazioni pratiche",
-        "Consigli su ristoranti e locali",
-        "Luoghi da visitare",
-        "Formato tascabile"
-      ],
-      "chapters": [
-        {"title": "Storia e Monumenti", "description": "Le due torri, San Petronio e tanto altro."},
-        {"title": "Enogastronomia", "description": "Tagliatelle, tortellini e tanto vino."},
-        {"title": "Vita Notturna e Università", "description": "La città più vivace d'Italia."},
-        {"title": "Dintorni", "description": "Escursioni nei dintorni."}
-      ]
+      "description": "Bologna Diario di Viaggio - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GPX4R55Y",
       "title": "Venezia Diario di Viaggio",
-      "subtitle": "La Serenissima tra Canali e Ponti",
+      "subtitle": "Volume 148 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€14.42",
-      "pages": 120,
-      "format": "15 x 21 cm",
-      "date": "24/02/2026",
+      "price": "€ 14,42",
       "category": "Diari di Viaggio",
-      "subcategory": "Italia",
-      "tags": ["venezia", "viaggio", "diario", "canali"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GPX4R55Y._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GPX4R55Y",
-      "description": "Un diario di viaggio per la città più romantica d'Italia. Gondole, piazze, arte e tanto mistero in 120 pagine.",
-      "features": [
-        "Pagine per appunti e disegni",
-        "Mappe e informazioni pratiche",
-        "Consigli su ristoranti",
-        "Itinerari suggeriti",
-        "Formato tascabile"
-      ],
-      "chapters": [
-        {"title": "San Marco e dintorni", "description": "Basilica, Palazzo Ducale e tanto altro."},
-        {"title": "Canali e Gondole", "description": "L'essenza di Venezia."},
-        {"title": "Arte e Cultura", "description": "Tiepolo, Tiziano e tanto altro."},
-        {"title": "Isola e dintorni", "description": "Murano, Burano e Torcello."}
-      ]
+      "description": "Venezia Diario di Viaggio - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GQBJ5GLJ",
       "title": "Roma Diario di Viaggio",
-      "subtitle": "La Città Eterna",
+      "subtitle": "Volume 149 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€14.00",
-      "pages": 120,
-      "format": "15 x 21 cm",
-      "date": "26/02/2026",
+      "price": "€ 14,00",
       "category": "Diari di Viaggio",
-      "subcategory": "Italia",
-      "tags": ["roma", "viaggio", "diario", "antica"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GQBJ5GLJ._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GQBJ5GLJ",
-      "description": "Il diario di viaggio perfetto per esplorare Roma: Colosseo, Vaticano, fontane e tutta la magia della Città Eterna.",
-      "features": [
-        "Pagine per appunti e disegni",
-        "Mappe e informazioni pratiche",
-        "Consigli su ristoranti e hotel",
-        "Itinerari suggeriti",
-        "Formato tascabile"
-      ],
-      "chapters": [
-        {"title": "Antica Roma", "description": "Colosseo, Fori e tanto altro."},
-        {"title": "Vaticano", "description": "Basilica di San Pietro e Musei."},
-        {"title": "Centro Storico", "description": "Pantheon, Piazza Navona e tanto altro."},
-        {"title": "Borghi e Trastevere", "description": "Lo spirito autentico di Roma."}
-      ]
+      "description": "Roma Diario di Viaggio - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GQK4FMJ9",
-      "title": "New York Diario di Viaggio",
-      "subtitle": "La Città che Non Dorme Mai",
+      "title": "New York Diario di viaggio",
+      "subtitle": "Volume 150 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€12.00",
-      "pages": 120,
-      "format": "15 x 21 cm",
-      "date": "28/02/2026",
+      "price": "€ 12,00",
       "category": "Diari di Viaggio",
-      "subcategory": "Mondo",
-      "tags": ["new york", "viaggio", "diario", "usa"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GQK4FMJ9._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GQK4FMJ9",
-      "description": "Un diario di viaggio per la Grande Mela: Manhattan, Brooklyn, Statue of Liberty e tutto il glamour di NYC.",
-      "features": [
-        "Pagine per appunti e disegni",
-        "Mappe e informazioni pratiche",
-        "Consigli su ristoranti e locali",
-        "Itinerari suggeriti",
-        "Formato tascabile"
-      ],
-      "chapters": [
-        {"title": "Manhattan", "description": "Times Square, Central Park e tanto altro."},
-        {"title": "Arte e Musei", "description": "MoMA, Met e Guggenheim."},
-        {"title": "Brooklyn e dintorni", "description": "Il lato alternativo di NYC."},
-        {"title": "Food & Fun", "description": "Dove mangiare e cosa fare."}
-      ]
+      "description": "New York Diario di viaggio - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GPQWZR8Y",
       "title": "Napoli Diario di Viaggio",
-      "subtitle": "La Città più Bella del Mondo",
+      "subtitle": "Volume 151 - Libri enigmistici",
       "author": "Bluetip Morley",
       "publisher": "La Quercia Edizioni",
-      "price": "€9.99",
-      "pages": 120,
-      "format": "15 x 21 cm",
-      "date": "23/02/2026",
+      "price": "€ 9,99",
       "category": "Diari di Viaggio",
-      "subcategory": "Italia",
-      "tags": ["napoli", "viaggio", "diario", "campania"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GPQWZR8Y._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GPQWZR8Y",
-      "description": "Un diario di viaggio per Napoli: pizza, vesuvio, vicoli e l'incanto di una città unica al mondo.",
-      "features": [
-        "Pagine per appunti e disegni",
-        "Mappe e informazioni pratiche",
-        "Consigli su pizzerie e locali",
-        "Itinerari suggeriti",
-        "Formato tascabile"
-      ],
-      "chapters": [
-        {"title": "Centro Storico", "description": "Spaccanapoli e dintorni."},
-        {"title": "Pizzette e Sfogliatelle", "description": "La vera cucina napoletana."},
-        {"title": "Storia e Miti", "description": "Da Pompei alla sirenetta."},
-        {"title": "Panorama e Dintorni", "description": "Vesuvio, Sorrento e tanto altro."}
-      ]
+      "description": "Napoli Diario di Viaggio - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GN2N9L48",
       "title": "SUDOKU della Divina Commedia",
-      "subtitle": "100 Schema Classici e Medi",
+      "subtitle": "Volume 152 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "€9.99",
-      "pages": 120,
-      "format": "15 x 21 cm",
-      "date": "12/02/2026",
+      "price": "€ 9,99",
       "category": "SUDOKU",
-      "subcategory": "Cultura Italiana",
-      "tags": ["sudoku", "divina commedia", "dante", "puzzle"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GN2N9L48._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GN2N9L48",
-      "description": "100 schemi di Sudoku a tema Divina Commedia. Difficoltà crescente per allenare la mente con Dante.",
-      "features": [
-        "100 schemi di Sudoku",
-        "Difficoltà crescente",
-        "Tema Divina Commedia",
-        "Soluzioni incluse"
-      ],
-      "chapters": [
-        {"title": "Inferno - Livello Facile", "description": "34 schemi per iniziare."},
-        {"title": "Purgatorio - Livello Medio", "description": "33 schemi intermedi."},
-        {"title": "Paradiso - Livello Difficile", "description": "33 schemi avanzati."}
-      ]
+      "description": "SUDOKU della Divina Commedia - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GMPVS4YL",
       "title": "Quaderno di Chitarra",
-      "subtitle": "Pentagramma e Accordi",
+      "subtitle": "Volume 153 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "$11.90",
-      "pages": 80,
-      "format": "21.59 x 27.94 cm",
-      "date": "10/02/2026",
-      "category": "Musica",
-      "subcategory": "Strumenti",
-      "tags": ["chitarra", "musica", "pentagramma", "acordi"],
-      "cover": "",
+      "price": "$11,90",
+      "category": "Quaderni",
+      "cover": "https://m.media-amazon.com/images/I/B0GMPVS4YL._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GMPVS4YL",
-      "description": "Quaderno musicale per chitarra con pentagramma e spazio per annotare accordi e tablature.",
-      "features": [
-        "Pagine con pentagramma",
-        "Spazio per accordi",
-        "Tablature",
-        "Formato musicistica"
-      ],
-      "chapters": [
-        {"title": "Pentagramma", "description": "Pagine per comporre."},
-        {"title": "Accordi", "description": "Griglia per annotare accordi."},
-        {"title": "Tablature", "description": "Per chitarra classica e acustica."}
-      ]
+      "description": "Quaderno di Chitarra - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0GMPKBN64",
       "title": "Quaderno Musicale Pentagrammato",
-      "subtitle": "Per Compositori e Musicisti",
+      "subtitle": "Volume 154 - Libri enigmistici",
       "author": "La Quercia Edizioni",
       "publisher": "La Quercia Edizioni",
-      "price": "$11.80",
-      "pages": 80,
-      "format": "21.59 x 27.94 cm",
-      "date": "10/02/2026",
+      "price": "$11,80",
       "category": "Musica",
-      "subcategory": "Strumenti",
-      "tags": ["musica", "pentagramma", "composizione", "partiture"],
-      "cover": "",
+      "cover": "https://m.media-amazon.com/images/I/B0GMPKBN64._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0GMPKBN64",
-      "description": "Quaderno professionale per musicisti con pagine pentagrammate per comporre e annotare.",
-      "features": [
-        "Pagine con pentagramma professionale",
-        "Alta qualità carta",
-        "Formato standard musicista",
-        "Ideale per composizione"
-      ],
-      "chapters": [
-        {"title": "Pentagramma Singolo", "description": "Per composizioni semplici."},
-        {"title": "Pentagramma Doppio", "description": "Per brani più complessi."}
-      ]
-    },
-    {
-      "asin": "B0FM3ZJWBH",
-      "title": "Quaderno Make Up",
-      "subtitle": "Per Truccatori e Make Up Artist",
-      "author": "LookBook Studio",
-      "publisher": "La Quercia Edizioni",
-      "price": "€11.00",
-      "pages": 80,
-      "format": "21.59 x 27.94 cm",
-      "date": "12/08/2025",
-      "category": "Quaderni",
-      "subcategory": "Specialità",
-      "tags": ["make up", "trucco", "estetica", "beauty"],
-      "cover": "",
-      "link": "https://www.amazon.it/dp/B0FM3ZJWBH",
-      "description": "Quaderno professionale per truccatori e make up artist. Pagine per annotare tecniche, prodotti e look.",
-      "features": [
-        "Pagine per appunti",
-        "Spazio per schizzi",
-        "Tabelle per prodotti",
-        "Formato professionale"
-      ],
-      "chapters": [
-        {"title": "Appunti", "description": "Per annotare tecniche."},
-        {"title": "Schizzi", "description": "Spazio per disegnare look."},
-        {"title": "Prodotti", "description": "Tabelle per trucchi e cosmetici."}
-      ]
-    },
-    {
-      "asin": "B0FKZZ9FK3",
-      "title": "Quaderno per Appunti e Scrittura",
-      "subtitle": "Quaderno a Righe Classico",
-      "author": "Modern Vintage",
-      "publisher": "La Quercia Edizioni",
-      "price": "€9.99",
-      "pages": 120,
-      "format": "6×9 pollici",
-      "date": "03/08/2025",
-      "category": "Quaderni",
-      "subcategory": "Base",
-      "tags": ["quaderno", "appunti", "scrittura", "righe"],
-      "cover": "assets/img/animali/gatti/copertina-gatti-righe.png",
-      "link": "https://www.amazon.it/dp/B0FKZZ9FK3",
-      "description": "Quaderno elegante a righe per appunti, diari e scrittura creativa. Formato tascabile.",
-      "features": [
-        "Formato 6×9 pollici",
-        "Righe 7mm",
-        "120 pagine",
-        "Copertina rigida"
-      ],
-      "chapters": [
-        {"title": "Appunti Quotidiani", "description": "Per tutti i giorni."},
-        {"title": "Diario", "description": "Pagine per il tuo diario."},
-        {"title": "Scrittura Creativa", "description": "Per scrittori e poeti."}
-      ]
-    },
-    {
-      "asin": "B0FP2MFZ17",
-      "title": "Diario Pressione Arteriosa e Glicemia",
-      "subtitle": "Monitoraggio Salute",
-      "author": "MV indipublishing",
-      "publisher": "La Quercia Edizioni",
-      "price": "€9.99",
-      "pages": 60,
-      "format": "15 x 21 cm",
-      "date": "28/08/2025",
-      "category": "Diari Salute",
-      "subcategory": "Monitoraggio",
-      "tags": ["salute", "pressione", "glicemia", "diabete"],
-      "cover": "",
-      "link": "https://www.amazon.it/dp/B0FP2MFZ17",
-      "description": "Diario per monitorare quotidianamente pressione arteriosa e livelli di glicemia. Schede settimanali e mensili.",
-      "features": [
-        "Tabelle per pressione sistolica e diastolica",
-        "Spazio per glicemia a digiuno e postprandiale",
-        "Note per sintomi e farmaci",
-        "Schede riassuntive mensili"
-      ],
-      "chapters": [
-        {"title": "Schede Giornaliere", "description": "Per il monitoraggio quotidiano."},
-        {"title": "Schede Settimanali", "description": "Riepilogo settimanale."},
-        {"title": "Schede Mensili", "description": "Tendenze a lungo termine."},
-        {"title": "Note e Consigli", "description": "Spazio per annotazioni mediche."}
-      ]
+      "description": "Quaderno Musicale Pentagrammato - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     },
     {
       "asin": "B0G4HCZ5PK",
       "title": "The Security Book",
-      "subtitle": "Guida alla Sicurezza",
+      "subtitle": "Volume 155 - Libri enigmistici",
       "author": "Orfano Sannita",
       "publisher": "La Quercia Edizioni",
-      "price": "$13.87",
-      "pages": 200,
-      "format": "21.59 x 27.94 cm",
-      "date": "29/11/2025",
-      "category": "Varie",
-      "subcategory": "Sicurezza",
-      "tags": ["sicurezza", "security", "protezione", "casa"],
-      "cover": "",
+      "price": "$13,87",
+      "category": "Parole Intrecciate",
+      "cover": "https://m.media-amazon.com/images/I/B0G4HCZ5PK._SL500_.jpg",
       "link": "https://www.amazon.it/dp/B0G4HCZ5PK",
-      "description": "Guida completa alla sicurezza domestica e personale. Consigli pratici per proteggere te e la tua famiglia.",
-      "features": [
-        "Consigli pratici",
-        "Sicurezza domestica",
-        "Protezione personale",
-        "Tecnologia e sistemi di allarme"
-      ],
-      "chapters": [
-        {"title": "Sicurezza Domestica", "description": "Proteggi la tua casa."},
-        {"title": "Sicurezza Personale", "description": "Consigli per la strada."},
-        {"title": "Tecnologia", "description": "Sistemi moderni di protezione."},
-        {"title": "Emergenze", "description": "Come comportarsi in caso di necessità."}
-      ]
+      "description": "The Security Book - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0FP2MFZ17",
+      "title": "Diario Pressione Arteriosa e Glicemia",
+      "subtitle": "Volume 156 - Libri enigmistici",
+      "author": "MV indipublishing",
+      "publisher": "La Quercia Edizioni",
+      "price": "€ 9,99",
+      "category": "Diari di Viaggio",
+      "cover": "https://m.media-amazon.com/images/I/B0FP2MFZ17._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0FP2MFZ17",
+      "description": "Diario Pressione Arteriosa e Glicemia - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0FM3ZJWBH",
+      "title": "Quaderno Make Up",
+      "subtitle": "Volume 157 - Libri enigmistici",
+      "author": "LookBook Studio",
+      "publisher": "La Quercia Edizioni",
+      "price": "€ 11,00",
+      "category": "Quaderni",
+      "cover": "https://m.media-amazon.com/images/I/B0FM3ZJWBH._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0FM3ZJWBH",
+      "description": "Quaderno Make Up - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
+    },
+    {
+      "asin": "B0FKZZ9FK3",
+      "title": "Quaderno per Appunti e Scrittura",
+      "subtitle": "Volume 158 - Libri enigmistici",
+      "author": "Modern Vintage",
+      "publisher": "La Quercia Edizioni",
+      "price": "€ 9,99",
+      "category": "Quaderni",
+      "cover": "https://m.media-amazon.com/images/I/B0FKZZ9FK3._SL500_.jpg",
+      "link": "https://www.amazon.it/dp/B0FKZZ9FK3",
+      "description": "Quaderno per Appunti e Scrittura - Un libro enigmistico coinvolgente pubblicato da La Quercia Edizioni."
     }
   ]
 }

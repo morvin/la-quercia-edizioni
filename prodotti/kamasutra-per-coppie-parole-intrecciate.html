@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamasutra per Coppie: Parole Intrecciate - La Quercia Edizioni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --amazon-orange: #FF9900;
+            --amazon-blue-link: #0066C0;
+            --text-dark: #0F1111;
+            --text-gray: #565959;
+            --border-color: #D5D9D9;
+            --bg-light: #F3F3F3;
+            --bg-white: #FFFFFF;
+        }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+        .header {
+            background: linear-gradient(180deg, #232F3E 0%, #131921 100%);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #FF9900;
+            text-decoration: none;
+        }
+        .logo span { color: #FFFFFF; }
+        .nav-links { display: flex; gap: 25px; }
+        .nav-links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 40px;
+            background: var(--bg-white);
+        }
+        .breadcrumb {
+            color: var(--text-gray);
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            padding: 15px 0;
+        }
+        .breadcrumb a {
+            color: var(--amazon-blue-link);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        
+        .product-detail {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            padding: 20px 0;
+        }
+        .product-image-section {
+            text-align: center;
+        }
+        .product-image-large {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .product-main {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .product-category-tag {
+            display: inline-block;
+            background: #E3F0FA;
+            color: #007185;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            width: fit-content;
+        }
+        .product-title-large {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            line-height: 1.3;
+        }
+        .product-author {
+            font-size: 0.95rem;
+            color: var(--amazon-blue-link);
+        }
+        .product-author:hover { text-decoration: underline; cursor: pointer; }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .stars { color: #F08C28; font-size: 1.1rem; }
+        .rating-text {
+            color: var(--amazon-blue-link);
+            font-size: 0.85rem;
+        }
+        .rating-text:hover { text-decoration: underline; cursor: pointer; }
+        
+        .product-price-section {
+            background: #F7F7F7;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .price-label {
+            font-size: 0.75rem;
+            color: var(--text-gray);
+        }
+        .product-price-large {
+            font-size: 1.8rem;
+            color: #B12704;
+            font-weight: 600;
+        }
+        .prime-badge {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #00A8E1;
+            font-size: 0.85rem;
+            margin-top: 8px;
+        }
+        
+        .product-actions {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .btn-cart {
+            background: linear-gradient(180deg, #FFD814 0%, #F7CA00 100%);
+            border: 1px solid #AD9561;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn-cart:hover { background: linear-gradient(180deg, #FFD814 0%, #E3B800 100%); }
+        .btn-buy {
+            background: linear-gradient(180deg, #FFA41C 0%, #FF8F00 100%);
+            border: 1px solid #AD9561;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn-buy:hover { background: linear-gradient(180deg, #FFB732 0%, #FFA41C 100%); }
+        
+        .product-description {
+            margin: 25px 0;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+        .product-description h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+        .product-description p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .product-features {
+            margin: 25px 0;
+        }
+        .product-features h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+        .features-list {
+            list-style: none;
+        }
+        .features-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+        .features-list li:last-child { border-bottom: none; }
+        
+        .footer {
+            background: #232F3E;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header { flex-direction: column; gap: 15px; padding: 15px 20px; }
+            .container { padding: 15px; }
+            .product-detail { grid-template-columns: 1fr; gap: 20px; }
+            .product-image-section { order: -1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">La<span>Quercia</span></a>
+        <nav class="nav-links">
+            <a href="../index.html">Catalogo</a>
+            <a href="../chi-siamo.html">Chi Siamo</a>
+            <a href="../contatti.html">Contatti</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; <a href="../index.html#catalog">Parole Intrecciate</a> &gt; Kamasutra per Coppie: Parole Intrecciate
+        </div>
+        
+        <div class="product-detail">
+            <div class="product-image-section">
+                <img src="https://m.media-amazon.com/images/I/B0GWQ1H57R._SL500_.jpg" 
+                     alt="Kamasutra per Coppie: Parole Intrecciate" 
+                     class="product-image-large"
+                     onerror="this.src='https://via.placeholder.com/280x400/2D5A27/FFF?text=Parole Intrecciate'">
+            </div>
+            
+            <div class="product-main">
+                <span class="product-category-tag">Parole Intrecciate</span>
+                <h1 class="product-title-large">Kamasutra per Coppie: Parole Intrecciate</h1>
+                <p class="product-author">di Bluetip Morley</p>
+                
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">4.5 su 5 stelle</span>
+                </div>
+                
+                <div class="product-price-section">
+                    <p class="price-label">Prezzo:</p>
+                    <p class="product-price-large">€ 12,90</p>
+                    <p class="prime-badge">✓ Consegna Prime disponibile</p>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn-cart">Aggiungi al carrello</button>
+                    <button class="btn-buy" onclick="window.open('https://www.amazon.it/dp/B0GWQ1H57R', '_blank')">Acquista ora</button>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Descrizione</h3>
+                    <p>Kamasutra per Coppie: Parole Intrecciate è un libro enigmistico pubblicato da La Quercia Edizioni. L'autore Bluetip Morley ha creato un'esperienza di intrattenimento educativo ideale per gli amanti dei puzzle e dei giochi di parole. Un'attività perfetta per rilassarsi e stimolare la mente.</p>
+                </div>
+                
+                <div class="product-features">
+                    <h3>Caratteristiche del prodotto</h3>
+                    <ul class="features-list">
+                        <li><strong>Editore:</strong> La Quercia Edizioni</li>
+                        <li><strong>Autore:</strong> Bluetip Morley</li>
+                        <li><strong>ASIN:</strong> B0GWQ1H57R</li>
+                        <li><strong>Categoria:</strong> Parole Intrecciate</li>
+                        <li><strong>Formato:</strong> Paperback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p style="margin-bottom: 10px;">&copy; 2026 La Quercia Edizioni - Libri Enigmistici</p>
+        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.6);">
+            Libri venduti e spediti da Amazon
+        </p>
+    </footer>
+</body>
+</html>

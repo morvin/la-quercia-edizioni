@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween - Parole Intrecciate: Volume 114</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --orange: #FF6B00; --dark-orange: #CC5500; --purple: #6B2D5B;
+            --dark-purple: #4A1F3F; --black: #1A1A1A; --dark-gray: #2D2D2D;
+            --cream: #FFF8E7; --green: #2D5A27;
+        }
+        body {
+            font-family: 'Lora', serif;
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark-purple) 50%, var(--black) 100%);
+            min-height: 100vh; color: var(--cream);
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 60px 20px; position: relative; z-index: 1; }
+        .hero h1 {
+            font-family: 'Creepster', cursive; font-size: 3.5rem; color: var(--orange);
+            text-shadow: 3px 3px 0 var(--dark-purple), 5px 5px 10px rgba(0,0,0,0.5);
+            margin-bottom: 20px; letter-spacing: 3px;
+        }
+        .hero .subtitle { font-size: 1.3rem; color: var(--cream); opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .product-card {
+            background: linear-gradient(145deg, rgba(45,45,45,0.95), rgba(74,31,63,0.95));
+            border-radius: 30px; padding: 50px; margin: 40px auto; max-width: 1000px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 100px rgba(255,107,0,0.1);
+            border: 2px solid rgba(255,107,0,0.3); position: relative; z-index: 1; overflow: hidden;
+        }
+        .product-content { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .book-cover-image {
+            position: relative; border-radius: 15px; overflow: hidden;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.5), 0 0 40px rgba(255,107,0,0.2);
+            transition: transform 0.5s ease; background: #1a1a1a; padding: 20px;
+        }
+        .book-cover-image:hover { transform: scale(1.02); }
+        .book-cover-image img { width: 100%; height: auto; display: block; border-radius: 8px; }
+        .product-info { color: var(--cream); }
+        .brand { display: inline-block; background: rgba(255,107,0,0.2); color: var(--orange); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; margin-bottom: 15px; font-weight: 600; }
+        .product-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; line-height: 1.3; }
+        .author { color: rgba(255,255,255,0.7); margin-bottom: 20px; font-style: italic; }
+        .author span { color: var(--orange); font-weight: 600; }
+        .price-section { margin: 30px 0; }
+        .price { font-size: 3rem; font-weight: 700; color: var(--orange); display: inline-block; }
+        .price-note { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-top: 5px; }
+        .features-list { list-style: none; margin: 25px 0; }
+        .features-list li { padding: 10px 0; padding-left: 35px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .features-list li::before { content: '🎃'; position: absolute; left: 0; top: 50%; transform: translateY(-50%); }
+        .btn-buy {
+            display: inline-block; background: linear-gradient(135deg, var(--orange), var(--dark-orange));
+            color: white; padding: 18px 50px; border-radius: 50px; font-size: 1.2rem; font-weight: 700;
+            text-decoration: none; margin-top: 20px; box-shadow: 0 10px 30px rgba(255,107,0,0.4);
+            transition: all 0.3s ease; position: relative; overflow: hidden;
+        }
+        .btn-buy:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(255,107,0,0.5); }
+        .section-title { font-family: 'Creepster', cursive; font-size: 2.5rem; color: var(--orange); text-align: center; margin-bottom: 50px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .chapters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .chapter-card { background: rgba(45,45,45,0.8); border-radius: 20px; padding: 35px; border: 1px solid rgba(255,107,0,0.2); transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .chapter-card:hover { transform: translateY(-5px); border-color: var(--orange); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+        .chapter-number { font-family: 'Creepster', cursive; font-size: 3rem; color: var(--orange); opacity: 0.3; position: absolute; top: 10px; right: 20px; }
+        .chapter-icon { font-size: 3rem; margin-bottom: 15px; }
+        .chapter-card h3 { font-size: 1.3rem; margin-bottom: 15px; color: var(--cream); }
+        .chapter-card p { font-size: 0.95rem; color: rgba(255,255,255,0.7); line-height: 1.6; }
+        .description-card { background: rgba(45,45,45,0.8); border-radius: 20px; padding: 50px; max-width: 900px; margin: 0 auto; border: 1px solid rgba(255,107,0,0.2); }
+        .description-card p { font-size: 1.1rem; line-height: 1.9; color: rgba(255,255,255,0.9); }
+        .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .spec-item { padding: 20px; background: rgba(0,0,0,0.3); border-radius: 15px; text-align: center; }
+        .spec-label { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .spec-value { font-size: 1.1rem; font-weight: 600; color: var(--orange); }
+        .badges { display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0; }
+        .badge { background: var(--green); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: 600; }
+        .badge-orange { background: var(--orange); }
+        .availability { display: flex; align-items: center; gap: 10px; margin: 15px 0; color: #4CAF50; font-weight: 600; }
+        .availability .dot { width: 10px; height: 10px; background: #4CAF50; border-radius: 50%; animation: blink 1.5s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .footer { text-align: center; padding: 40px 20px; color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+        .rankings-card { background: rgba(45,45,45,0.8); border-radius: 20px; padding: 40px; max-width: 800px; margin: 0 auto; border: 1px solid rgba(255,107,0,0.2); }
+        .ranking-item { display: flex; align-items: center; padding: 15px 20px; background: rgba(0,0,0,0.3); border-radius: 12px; margin-bottom: 12px; }
+        .ranking-position { font-size: 1.5rem; font-weight: 700; color: var(--orange); min-width: 80px; text-align: center; }
+        .ranking-category { color: var(--cream); font-size: 1rem; }
+        .ranking-badge { margin-left: auto; background: var(--green); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+        .back-link { display: inline-block; color: var(--orange); text-decoration: none; margin-bottom: 20px; font-size: 1rem; }
+        .back-link:hover { color: var(--cream); }
+        .rankings-section, .specs-section, .description-section, .chapters-section { padding: 60px 20px; position: relative; z-index: 1; }
+        .specs-card { background: rgba(45,45,45,0.8); border-radius: 20px; padding: 40px; max-width: 800px; margin: 0 auto; border: 1px solid rgba(255,107,0,0.2); }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .product-content { grid-template-columns: 1fr; gap: 30px; } .price { font-size: 2.5rem; } .product-card { padding: 30px 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Torna al catalogo</a>
+        <section class="hero"><h1>Halloween Puzzle Book</h1><p class="subtitle">80 Crucipuzzle da Brivido per Adulti e Ragazzi</p></section>
+        <div class="product-card">
+            <div class="product-content">
+                <div class="book-cover-image"><img src="71KKesBoglL._SL1293_.jpg" alt="Halloween Copertina"></div>
+                <div class="product-info">
+                    <span class="brand">Bluetip Morley</span>
+                    <h2 class="product-title">Halloween - Parole Intrecciate: Volume 114</h2>
+                    <p class="author">di <span>Bluetip Morley</span></p>
+                    <div class="badges"><span class="badge">80 Puzzle</span><span class="badge badge-orange">Grande Formato</span><span class="badge">122 Pagine</span></div>
+                    <div class="availability"><span class="dot"></span> Disponibile su Amazon</div>
+                    <div class="price-section"><div class="price">€9.98</div><p class="price-note">Copertina flessibile</p></div>
+                    <ul class="features-list">
+                        <li>80 cruciverba tematici Halloween</li><li>Caratteri grandi per una lettura confortevole</li>
+                        <li>Pagine da colorare e labirinti bonus</li><li>Soluzioni incluse</li><li>Formato 21.59 x 27.94 cm</li>
+                    </ul>
+                    <a href="https://amzn.eu/d/0aPzNLep" class="btn-buy" target="_blank">Acquista su Amazon 🛒</a>
+                </div>
+            </div>
+        </div>
+        <section class="chapters-section"><h2 class="section-title">🎃 I 4 Capitoli del Libro</h2>
+            <div class="chapters-grid">
+                <div class="chapter-card"><span class="chapter-number">01</span><span class="chapter-icon">🕯️</span><h3>Le Origini e le Tradizioni</h3><p>Dai Celti alla festa di oggi: zucche intagliate, dolcetti e gatti neri.</p></div>
+                <div class="chapter-card"><span class="chapter-number">02</span><span class="chapter-icon">🧛</span><h3>Creature della Notte</h3><p>Vampiri, licantropi e zombie: i mostri classici dell'horror.</p></div>
+                <div class="chapter-card"><span class="chapter-number">03</span><span class="chapter-icon">🏚️</span><h3>Luoghi e Atmosfere Spettrali</h3><p>Case infestate, cimiteri abbandonati e nebbia fitta.</p></div>
+                <div class="chapter-card"><span class="chapter-number">04</span><span class="chapter-icon">🔮</span><h3>Magia, Incantesimi e Paure</h3><p>Streghe, pozioni magiche e le paure più profonde.</p></div>
+            </div>
+        </section>
+        <section class="description-section"><h2 class="section-title">📖 Descrizione</h2>
+            <div class="description-card"><p>Entra nel mondo del mistero e del brivido con 80 sfide a crucipuzzle dedicate alla notte più terrificante dell'anno! Un passatempo terribilmente divertente per immergerti nell'atmosfera autunnale.</p></div>
+        </section>
+        <section class="rankings-section"><h2 class="section-title">🏆 Bestseller di Amazon</h2>
+            <div class="rankings-card">
+                <div class="ranking-item"><span class="ranking-position">#141.438</span><span class="ranking-category">in Libri (Top 100)</span><span class="ranking-badge">Bestseller</span></div>
+                <div class="ranking-item"><span class="ranking-position">#138</span><span class="ranking-category">in Pensionamento</span><span class="ranking-badge">Top 200</span></div>
+                <div class="ranking-item"><span class="ranking-position">#269</span><span class="ranking-category">in Giochi per feste</span><span class="ranking-badge">Top 300</span></div>
+                <div class="ranking-item"><span class="ranking-position">#287</span><span class="ranking-category">in Vecchiaia</span><span class="ranking-badge">Top 300</span></div>
+            </div>
+        </section>
+        <section class="specs-section"><h2 class="section-title">📋 Specifiche Tecniche</h2>
+            <div class="specs-card"><div class="specs-grid">
+                <div class="spec-item"><p class="spec-label">Pagine</p><p class="spec-value">122 pagine</p></div>
+                <div class="spec-item"><p class="spec-label">Lingua</p><p class="spec-value">Italiano</p></div>
+                <div class="spec-item"><p class="spec-label">ISBN</p><p class="spec-value">979-8255185634</p></div>
+                <div class="spec-item"><p class="spec-label">Dimensioni</p><p class="spec-value">21.59 x 27.94 cm</p></div>
+                <div class="spec-item"><p class="spec-label">Formato</p><p class="spec-value">Copertina flessibile</p></div>
+                <div class="spec-item"><p class="spec-label">Pubblicazione</p><p class="spec-value">6 Aprile 2026</p></div>
+            </div></div>
+        </section>
+        <footer class="footer"><p>Prodotto venduto e spedito da Amazon | Reso entro 14 giorni</p></footer>
+    </div>
+</body>
+</html>

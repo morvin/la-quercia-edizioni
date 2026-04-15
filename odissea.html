@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Odissea - Parole Intrecciate: Volume 126</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark-gold: #B8860B;
+            --blue: #1E3A5F;
+            --dark-blue: #0D1F33;
+            --cream: #FFF8E7;
+            --teal: #2D5A5A;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--blue) 50%, var(--dark-blue) 100%);
+            min-height: 100vh;
+            color: var(--cream);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Floating decorations */
+        .floating-decoration {
+            position: fixed;
+            font-size: 3rem;
+            opacity: 0.15;
+            animation: float 6s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .decoration-1 { top: 10%; left: 5%; animation-delay: 0s; }
+        .decoration-2 { top: 30%; right: 8%; animation-delay: 2s; }
+        .decoration-3 { bottom: 20%; left: 10%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            color: var(--gold);
+            text-shadow: 3px 3px 0 var(--dark-blue), 5px 5px 10px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: var(--cream);
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Product Card */
+        .product-card {
+            background: linear-gradient(145deg, rgba(30,58,95,0.95), rgba(13,31,51,0.95));
+            border-radius: 30px;
+            padding: 50px;
+            margin: 40px auto;
+            max-width: 1000px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 100px rgba(212,175,55,0.1);
+            border: 2px solid rgba(212,175,55,0.3);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 50%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .product-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        /* Book Visual */
+        .book-visual {
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .book-cover-image {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow:
+                10px 10px 30px rgba(0,0,0,0.5),
+                0 0 40px rgba(212,175,55,0.2);
+            transition: transform 0.5s ease;
+            background: #0D1F33;
+            padding: 20px;
+        }
+
+        .book-cover-image:hover {
+            transform: scale(1.02);
+        }
+
+        .book-cover-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .book-fallback {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+            padding: 40px 30px;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+            border-radius: 8px;
+        }
+
+        .book-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .book-fallback h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .book-fallback .volume {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            font-weight: 600;
+        }
+
+        /* Product Info */
+        .product-info {
+            color: var(--cream);
+        }
+
+        .brand {
+            display: inline-block;
+            background: rgba(212,175,55,0.2);
+            color: var(--gold);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .product-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .author {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .author span {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .price-section {
+            margin: 30px 0;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: inline-block;
+        }
+
+        .price-note {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 5px;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .features-list li {
+            padding: 10px 0;
+            padding-left: 35px;
+            position: relative;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list li::before {
+            content: '⚓';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            color: white;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-buy::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-buy:hover::before {
+            left: 100%;
+        }
+
+        .btn-buy:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(212,175,55,0.5);
+        }
+
+        /* Chapters Section */
+        .chapters-section {
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .chapter-card {
+            background: rgba(30,58,95,0.8);
+            border-radius: 20px;
+            padding: 35px;
+            border: 1px solid rgba(212,175,55,0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--teal));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .chapter-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .chapter-number {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .chapter-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .chapter-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--cream);
+        }
+
+        .chapter-card p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+
+        /* Description */
+        .description-section {
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .description-card {
+            background: rgba(30,58,95,0.8);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid rgba(212,175,55,0.2);
+            position: relative;
+        }
+
+        .description-card p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: rgba(255,255,255,0.9);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Specifications */
+        .specs-section {
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .specs-card {
+            background: rgba(30,58,95,0.8);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid rgba(212,175,55,0.2);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .spec-item {
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .spec-label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .spec-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        /* Badges */
+        .badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+
+        .badge {
+            background: var(--teal);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-gold {
+            background: var(--gold);
+            color: #0D1F33;
+        }
+
+        /* Availability */
+        .availability {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
+        .availability .dot {
+            width: 10px;
+            height: 10px;
+            background: #4CAF50;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .product-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .product-card {
+                padding: 30px 20px;
+            }
+
+            .price {
+                font-size: 2.5rem;
+            }
+
+            .product-title {
+                font-size: 1.4rem;
+            }
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--gold);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--cream);
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating decorations -->
+    <div class="floating-decoration decoration-1">⚓</div>
+    <div class="floating-decoration decoration-2">🏛️</div>
+    <div class="floating-decoration decoration-3">⚔️</div>
+
+    <div class="container">
+        <!-- Back Link -->
+        <a href="index.html" class="back-link">← Torna al catalogo</a>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>L'Odissea - Parole Intrecciate</h1>
+            <p class="subtitle">80 Crucipuzzle Tematici sul Ritorno di Ulisse</p>
+        </section>
+
+        <!-- Main Product -->
+        <div class="product-card">
+            <div class="product-content">
+                <div class="book-visual">
+                    <div class="book-cover-image">
+                        <img src="81yPgKe7YLL._SL1293_.jpg"
+                             alt="L'Odissea - Parole Intrecciate Volume 126 Copertina"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-fallback" style="display: none;">
+                            <span class="book-icon">⚓🏛️⚔️</span>
+                            <h3>L'ODISSEA</h3>
+                            <div class="volume">Parole Intrecciate<br>Volume 126</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <span class="brand">La Quercia Edizioni</span>
+                    <h2 class="product-title">L'Odissea - Parole Intrecciate: Vol. 126</h2>
+                    <p class="author">di <span>Bluetip Morley</span></p>
+
+                    <div class="badges">
+                        <span class="badge">80 Puzzle</span>
+                        <span class="badge badge-gold">Mitologia</span>
+                        <span class="badge">1600 Parole</span>
+                        <span class="badge">122 Pagine</span>
+                    </div>
+
+                    <div class="availability">
+                        <span class="dot"></span>
+                        Disponibile su Amazon
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price">€11.00</div>
+                        <p class="price-note">Copertina flessibile</p>
+                    </div>
+
+                    <ul class="features-list">
+                        <li>80 crucipuzzle tematici sull'Odissea di Omero</li>
+                        <li>4 capitoli narrativi che seguono il viaggio di Ulisse</li>
+                        <li>1600 parole da scoprire</li>
+                        <li>Caratteri grandi per una lettura confortevole</li>
+                        <li>Pagine da colorare e labirinti bonus</li>
+                        <li>Soluzioni incluse alla fine del volume</li>
+                        <li>Formato 21.59 x 27.94 cm</li>
+                    </ul>
+
+                    <a href="https://amzn.eu/d/00alao6e" class="btn-buy" target="_blank">
+                        Acquista su Amazon 🛒
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapters -->
+        <section class="chapters-section">
+            <h2 class="section-title">⚓ I 4 Capitoli del Libro</h2>
+            <div class="chapters-grid">
+                <div class="chapter-card">
+                    <span class="chapter-number">01</span>
+                    <span class="chapter-icon">⛵</span>
+                    <h3>La Partenza e i Primi Ostacoli</h3>
+                    <p>Dalla guerra di Troia al lungo viaggio verso casa. I primi incontri e le prime sfide per Ulisse e i suoi uomini.</p>
+                </div>
+
+                <div class="chapter-card">
+                    <span class="chapter-number">02</span>
+                    <span class="chapter-icon">🧙‍♂️</span>
+                    <h3>Magia, Mostri e l'Oltretomba</h3>
+                    <p>Circe, Polifemo, Ciclopi e il viaggio nell'Ade. Le creature magiche e i mostri che popolano il mare.</p>
+                </div>
+
+                <div class="chapter-card">
+                    <span class="chapter-number">03</span>
+                    <span class="chapter-icon">🏝️</span>
+                    <h3>I Feaci e i Racconti</h3>
+                    <p>L'approdo nell'isola dei Feaci e i racconti di Ulisse. Le avventure narrate al re Alcinoo.</p>
+                </div>
+
+                <div class="chapter-card">
+                    <span class="chapter-number">04</span>
+                    <span class="chapter-icon">🏹</span>
+                    <h3>Itaca, l'Arco e la Vendetta</h3>
+                    <p>Il ritorno a casa, il riconoscimento e la vendetta sui Proci. Il finale epico dell'eroe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="description-section">
+            <h2 class="section-title">📖 Descrizione</h2>
+            <div class="description-card">
+                <p>
+                    Un affascinante libro di crucipuzzle a tema Odissea. Questo volume contiene 80 cruciverba tematici che seguono cronologicamente
+                    il lungo viaggio di Ulisse verso Itaca. I titoli ei sottotitoli di ogni puzzle servono come riassunto narrativo dell'opera
+                    epica di Omero.
+                    <br><br>
+                    Perfetto per gli amanti della mitologia e della letteratura, ideale per studenti delle superiori che studiano l'Odissea,
+                    insegnanti e sognatori. Un modo rilassante e culturale per immergersi nella grande avventura dell'antica Grecia.
+                </p>
+            </div>
+        </section>
+
+        <!-- Specifications -->
+        <section class="specs-section">
+            <h2 class="section-title">📋 Specifiche Tecniche</h2>
+            <div class="specs-card">
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <p class="spec-label">Pagine</p>
+                        <p class="spec-value">122 pagine</p>
+                    </div>
+                    <div class="spec-item">
+                        <p class="spec-label">Lingua</p>
+                        <p class="spec-value">Italiano</p>
+                    </div>
+                    <div class="spec-item">
+                        <p class="spec-label">ISBN</p>
+                        <p class="spec-value">979-8255138821</p>
+                    </div>
+                    <div class="spec-item">
+                        <p class="spec-label">Dimensioni</p>
+                        <p class="spec-value">21.59 x 27.94 cm</p>
+                    </div>
+                    <div class="spec-item">
+                        <p class="spec-label">Formato</p>
+                        <p class="spec-value">Copertina flessibile</p>
+                    </div>
+                    <div class="spec-item">
+                        <p class="spec-label">Data Pubblicazione</p>
+                        <p class="spec-value">5 Aprile 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Prodotto venduto e spedito da Amazon | Reso entro 14 giorni</p>
+        </footer>
+    </div>
+</body>
+</html>

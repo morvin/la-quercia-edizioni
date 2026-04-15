@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storia d'Italia - Parole Intrecciate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --red: #B22222; --dark-red: #8B0000; --black: #1A1A1A; --cream: #FFF8E7; --gold: #D4AF37; }
+        body { font-family: 'Lora', serif; background: linear-gradient(135deg, var(--black) 0%, #1a1a2e 50%, var(--black) 100%); min-height: 100vh; color: var(--cream); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 60px 20px; }
+        .hero h1 { font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
+        .hero .subtitle { font-size: 1.2rem; color: var(--cream); opacity: 0.9; }
+        .back-link { display: inline-block; color: var(--gold); text-decoration: none; margin-bottom: 20px; font-size: 1rem; }
+        .back-link:hover { color: var(--cream); }
+        .product-card { background: linear-gradient(145deg, rgba(45,45,45,0.95), rgba(26,26,46,0.95)); border-radius: 25px; padding: 40px; margin: 30px auto; max-width: 1000px; border: 2px solid rgba(178,34,34,0.3); }
+        .product-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .book-cover { width: 100%; border-radius: 12px; box-shadow: 5px 5px 20px rgba(0,0,0,0.4); }
+        .price { font-size: 2.5rem; font-weight: 700; color: var(--gold); }
+        .price-note { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-top: 5px; }
+        .features-list { list-style: none; margin: 20px 0; }
+        .features-list li { padding: 8px 0; padding-left: 25px; position: relative; }
+        .features-list li::before { content: '🇮🇹'; position: absolute; left: 0; }
+        .btn-buy { display: inline-block; background: linear-gradient(135deg, var(--gold), #9a7b0a); color: white; padding: 15px 40px; border-radius: 30px; font-size: 1.1rem; font-weight: 600; text-decoration: none; margin-top: 20px; box-shadow: 0 5px 20px rgba(212,175,55,0.4); }
+        .chapters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 30px auto; }
+        .chapter-card { background: rgba(45,45,45,0.8); border-radius: 15px; padding: 25px; border: 1px solid rgba(178,34,34,0.2); }
+        .chapter-card h3 { color: var(--gold); margin-bottom: 10px; font-size: 1.1rem; }
+        .chapter-card p { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+        .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+        .spec-item { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; text-align: center; }
+        .spec-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); text-transform: uppercase; }
+        .spec-value { font-size: 1rem; font-weight: 600; color: var(--gold); margin-top: 5px; }
+        .section-title { font-size: 1.8rem; color: var(--gold); text-align: center; margin: 40px 0 25px; }
+        .footer { text-align: center; padding: 30px; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        @media (max-width: 768px) { .product-content { grid-template-columns: 1fr; } .price { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Torna al catalogo</a>
+        <section class="hero">
+            <h1>🇮🇹 Storia d'Italia</h1>
+            <p class="subtitle">Un affascinante viaggio nel tempo dai Romani al Rinascimento fino all'Età Moderna</p>
+        </section>
+        <div class="product-card">
+            <div class="product-content">
+                <img src="placeholder-new.jpg" alt="Storia d'Italia" class="book-cover">
+                <div>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;">La Quercia Edizioni</p>
+                    <div class="price">€11.07</div>
+                    <p class="price-note">Copertina flessibile</p>
+                    <ul class="features-list">
+                        <li>80 schemi tematici in ordine cronologico</li>
+                        <li>1600 parole da scoprire</li>
+                        <li>Caratteri Grandi e Leggibili</li>
+                        <li>Disegni storici da colorare</li>
+                        <li>Labirinti procedurali bonus</li>
+                        <li>Soluzioni complete incluse</li>
+                    </ul>
+                    <a href="https://www.amazon.it/dp/B0GWXCHYRD" class="btn-buy" target="_blank">Acquista su Amazon 🛒</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="section-title">🏛️ I 4 Periodi Storici</h2>
+        <div class="chapters-grid">
+            <div class="chapter-card"><h3>1. L'Impero Romano</h3><p>Dalle strade basolate alle legioni, dalla Repubblica all'Impero.</p></div>
+            <div class="chapter-card"><h3>2. Il Medioevo e i Liberi Comuni</h3><p>Castelli, abbazie, Comuni e Signorie.</p></div>
+            <div class="chapter-card"><h3>3. Il Rinascimento e le Scoperte</h3><p>Dalle tele immortali alle grandi esplorazioni.</p></div>
+            <div class="chapter-card"><h3>4. Dal Risorgimento all'Italia Moderna</h3><p>Le camicie rosse, l'Unità e la costruzione della nazione.</p></div>
+        </div>
+        <h2 class="section-title">📋 Specifiche</h2>
+        <div class="specs-grid" style="max-width: 800px; margin: 0 auto;">
+            <div class="spec-item"><p class="spec-label">Pagine</p><p class="spec-value">126</p></div>
+            <div class="spec-item"><p class="spec-label">Lingua</p><p class="spec-value">Italiano</p></div>
+            <div class="spec-item"><p class="spec-label">ISBN</p><p class="spec-value">979-8257035197</p></div>
+            <div class="spec-item"><p class="spec-label">Formato</p><p class="spec-value">21.59 x 27.94 cm</p></div>
+        </div>
+        <footer class="footer"><p>Prodotto venduto e spedito da Amazon · Reso entro 14 giorni</p></footer>
+    </div>
+</body>
+</html>

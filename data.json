@@ -1,0 +1,72 @@
+{
+  "publisher": {
+    "name": "La Quercia Edizioni",
+    "tagline": "Collane essenziali per passioni reali",
+    "lang": "it-IT"
+  },
+  "series": [
+    {
+      "slug": "animali",
+      "title": "Animali",
+      "status": "active",
+      "accent": "#0B6A4A",
+      "collections": [
+        {
+          "slug": "gatti",
+          "title": "Gatti",
+          "status": "active",
+          "books": [
+            {
+              "slug": "righe",
+              "title": "Quaderno a Righe",
+              "status": "active",
+              "asin": "B0FKZZ9FK3",
+              "format": "6×9",
+              "pages": 120,
+              "interior": "Righe 7mm",
+              "language": "Italiano",
+              "images": {
+                "cover": "/assets/img/animali/gatti/copertina-gatti-righe.png",
+                "previews": [
+                  "/assets/img/animali/gatti/anteprima1.png",
+                  "/assets/img/animali/gatti/anteprima2.png"
+                ]
+              },
+              "links": {
+                "buy": "https://www.amazon.it/dp/B0FKZZ9FK3",
+                "detail": "/collane/animali/gatti-righe.html"
+              },
+              "badges": [
+                "Novità"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cani",
+          "title": "Cani",
+          "status": "planned",
+          "books": []
+        },
+        {
+          "slug": "gufi",
+          "title": "Gufi",
+          "status": "planned",
+          "books": []
+        }
+      ]
+    },
+    {
+      "slug": "arte",
+      "title": "Arte",
+      "status": "planned",
+      "collections": []
+    },
+    {
+      "slug": "diari",
+      "title": "Diari",
+      "status": "planned",
+      "collections": []
+    }
+  ]
+}

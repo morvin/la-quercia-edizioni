@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parole Intrecciate - Collezione Completa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --orange: #FF6B00; --dark-orange: #CC5500; --purple: #6B2D5B;
+            --dark-purple: #4A1F3F; --gold: #D4AF37; --dark-gold: #B8860B;
+            --blue: #1E3A5F; --dark-blue: #0D1F33; --pink: #C71585; --green: #228B22;
+            --black: #1A1A1A; --cream: #FFF8E7; --red: #DC143C;
+        }
+        body { font-family: 'Lora', serif; background: linear-gradient(135deg, var(--black) 0%, var(--dark-purple) 50%, var(--black) 100%); min-height: 100vh; color: var(--cream); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 60px 20px; }
+        .hero h1 { font-family: 'Creepster', cursive; font-size: 3.5rem; color: var(--orange); text-shadow: 3px 3px 0 var(--dark-purple); margin-bottom: 15px; letter-spacing: 3px; }
+        .hero .subtitle { font-size: 1.2rem; color: var(--cream); opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .hero .author-line { margin-top: 20px; font-size: 1rem; color: rgba(255,255,255,0.7); }
+        .hero .author-line span { color: var(--orange); font-weight: 600; }
+        .back-link { display: inline-block; color: var(--cream); text-decoration: none; margin-bottom: 30px; padding: 10px 20px; background: rgba(255,255,255,0.1); border-radius: 20px; }
+        .back-link:hover { background: rgba(255,255,255,0.2); }
+        .books-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin: 40px 0; }
+        .section-title { font-size: 2rem; color: var(--orange); text-align: center; margin: 40px 0 20px; }
+        .book-card { background: linear-gradient(145deg, rgba(45,45,45,0.95), rgba(74,31,63,0.95)); border-radius: 20px; padding: 25px; border: 2px solid rgba(255,107,0,0.2); transition: all 0.3s ease; text-decoration: none; }
+        .book-card:hover { transform: translateY(-8px); border-color: var(--orange); box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+        .book-card.odissea { background: linear-gradient(145deg, rgba(30,58,95,0.95), rgba(13,31,51,0.95)); border-color: rgba(212,175,55,0.2); }
+        .book-card.odissea:hover { border-color: var(--gold); }
+        .book-card.campania { background: linear-gradient(145deg, rgba(34,139,34,0.3), rgba(13,31,51,0.95)); border-color: rgba(34,139,34,0.3); }
+        .book-card.campania:hover { border-color: var(--green); }
+        .book-card.kamasutra { background: linear-gradient(145deg, rgba(199,21,133,0.3), rgba(74,31,63,0.95)); border-color: rgba(199,21,133,0.3); }
+        .book-card.kamasutra:hover { border-color: var(--pink); }
+        .book-card.corpo { background: linear-gradient(145deg, rgba(60,20,20,0.95), rgba(45,45,45,0.95)); border-color: rgba(220,20,60,0.3); }
+        .book-card.corpo:hover { border-color: var(--red); }
+        .book-card.donne { background: linear-gradient(145deg, rgba(45,45,45,0.95), rgba(30,30,50,0.95)); border-color: rgba(147,112,219,0.3); }
+        .book-card.donne:hover { border-color: var(--purple); }
+        .book-card.letteratura { background: linear-gradient(145deg, rgba(74,31,63,0.95), rgba(45,45,45,0.95)); border-color: rgba(212,175,55,0.3); }
+        .book-card.letteratura:hover { border-color: var(--gold); }
+        .book-card.venezia { background: linear-gradient(145deg, rgba(30,58,95,0.95), rgba(45,45,45,0.95)); border-color: rgba(0,100,150,0.3); }
+        .book-card.venezia:hover { border-color: #0096c7; }
+        .book-card.napoli { background: linear-gradient(145deg, rgba(139,69,19,0.3), rgba(45,45,45,0.95)); border-color: rgba(255,100,0,0.3); }
+        .book-card.napoli:hover { border-color: #ff6b35; }
+        .book-card.newyork { background: linear-gradient(145deg, rgba(45,45,45,0.95), rgba(0,50,80,0.95)); border-color: rgba(100,100,100,0.3); }
+        .book-card.newyork:hover { border-color: #808080; }
+        .book-cover { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 15px; box-shadow: 3px 3px 15px rgba(0,0,0,0.3); background: #333; }
+        .book-info { position: relative; z-index: 1; }
+        .book-info h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--cream); }
+        .book-info .volume { font-size: 0.85rem; color: var(--orange); margin-bottom: 10px; font-weight: 600; }
+        .book-card.odissea .volume, .book-card.odissea .price, .book-card.letteratura .volume, .book-card.letteratura .price { color: var(--gold); }
+        .book-card.campania .volume, .book-card.campania .price { color: var(--green); }
+        .book-card.kamasutra .volume, .book-card.kamasutra .price { color: var(--pink); }
+        .book-card.corpo .volume, .book-card.corpo .price { color: var(--red); }
+        .book-card.donne .volume, .book-card.donne .price { color: var(--purple); }
+        .book-card.venezia .volume, .book-card.venezia .price { color: #0096c7; }
+        .book-card.napoli .volume, .book-card.napoli .price { color: #ff6b35; }
+        .book-info .price { font-size: 1.5rem; font-weight: 700; color: var(--orange); margin-bottom: 10px; }
+        .book-info .features { font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.5; }
+        .btn-view { display: inline-block; background: linear-gradient(135deg, var(--orange), var(--dark-orange)); color: white; padding: 10px 25px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; text-decoration: none; margin-top: 15px; box-shadow: 0 3px 15px rgba(255,107,0,0.3); transition: all 0.3s ease; }
+        .book-card.odissea .btn-view, .book-card.letteratura .btn-view { background: linear-gradient(135deg, var(--gold), var(--dark-gold)); box-shadow: 0 3px 15px rgba(212,175,55,0.3); }
+        .book-card.campania .btn-view { background: linear-gradient(135deg, var(--green), #006400); box-shadow: 0 3px 15px rgba(34,139,34,0.3); }
+        .book-card.kamasutra .btn-view { background: linear-gradient(135deg, var(--pink), #8B008B); box-shadow: 0 3px 15px rgba(199,21,133,0.3); }
+        .book-card.corpo .btn-view { background: linear-gradient(135deg, var(--red), #8B0000); box-shadow: 0 3px 15px rgba(220,20,60,0.3); }
+        .book-card.donne .btn-view { background: linear-gradient(135deg, var(--purple), #6A0DAD); box-shadow: 0 3px 15px rgba(147,112,219,0.3); }
+        .book-card.venezia .btn-view { background: linear-gradient(135deg, #0096c7, #0077b6); box-shadow: 0 3px 15px rgba(0,150,199,0.3); }
+        .book-card.napoli .btn-view { background: linear-gradient(135deg, #ff6b35, #d62828); box-shadow: 0 3px 15px rgba(255,107,53,0.3); }
+        .book-card.newyork .btn-view { background: linear-gradient(135deg, #555, #333); box-shadow: 0 3px 15px rgba(100,100,100,0.3); }
+        .btn-view:hover { transform: scale(1.05); }
+        .footer { text-align: center; padding: 40px 20px; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .books-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../" class="back-link">← Torna al sito La Quercia Edizioni</a>
+        <section class="hero">
+            <h1>Parole Intrecciate</h1>
+            <p class="subtitle">Collezione di libri enigmistici tematici per adulti e ragazzi</p>
+            <p class="author-line">di <span>Bluetip Morley</span> · La Quercia Edizioni</p>
+        </section>
+
+        <h2 class="section-title">🎃 Enigmistica</h2>
+        <div class="books-grid">
+            <a href="halloween.html" class="book-card">
+                <img src="71KKesBoglL._SL1293_.jpg" alt="Halloween" class="book-cover">
+                <div class="book-info">
+                    <h3>🎃 Halloween</h3>
+                    <p class="volume">Volume 114 · 80 Crucipuzzle</p>
+                    <p class="price">€9.98</p>
+                    <p class="features">Scopri le origini e le leggende della Notte delle Streghe.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="odissea.html" class="book-card odissea">
+                <img src="81yPgKe7YLL._SL1293_.jpg" alt="L'Odissea" class="book-cover">
+                <div class="book-info">
+                    <h3>⚓ L'Odissea</h3>
+                    <p class="volume">Volume 126 · 80 Crucipuzzle</p>
+                    <p class="price">€11.00</p>
+                    <p class="features">Il viaggio di Ulisse verso Itaca. Mostri, dei e avventure.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="corpo-umano.html" class="book-card corpo">
+                <img src="placeholder.jpg" alt="Il Corpo Umano" class="book-cover">
+                <div class="book-info">
+                    <h3>🫀 Il Corpo Umano</h3>
+                    <p class="volume">Volume 123 · 80 Crucipuzzle</p>
+                    <p class="price">€8.52</p>
+                    <p class="features">Alla scoperta dei segreti dell'anatomia e della biologia.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="campania.html" class="book-card campania">
+                <img src="placeholder.jpg" alt="La Campania" class="book-cover">
+                <div class="book-info">
+                    <h3>🍕 La Campania</h3>
+                    <p class="volume">Volume 128 · 80 Crucipuzzle</p>
+                    <p class="price">€--</p>
+                    <p class="features">Alla scoperta di Napoli, Pompei, Costiera Amalfitana.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="kamasutra.html" class="book-card kamasutra">
+                <img src="placeholder.jpg" alt="Kamasutra" class="book-cover">
+                <div class="book-info">
+                    <h3>💋 Kamasutra Coppie</h3>
+                    <p class="volume">80 Schemi Sensuali</p>
+                    <p class="price">€11.00</p>
+                    <p class="features">Giochi erotici e posizioni per ritrovare l'intimità.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="donne.html" class="book-card donne">
+                <img src="placeholder.jpg" alt="Donne" class="book-cover">
+                <div class="book-info">
+                    <h3>✨ Donne - I Quattro Elementi</h3>
+                    <p class="volume">Volume 131 · 80 Schemi</p>
+                    <p class="price">€10.66</p>
+                    <p class="features">Citazioni motivazionali e sollievo mentale per donne.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="section-title">📚 Capolavori della Letteratura</h2>
+        <div class="books-grid">
+            <a href="https://www.amazon.it/dp/B0GQQF238P" target="_blank" class="book-card letteratura">
+                <img src="https://m.media-amazon.com/images/I/71KKesBoglL._SL1293_.jpg" alt="Capolavori Vol. 2" class="book-cover">
+                <div class="book-info">
+                    <h3>📖 Capolavori Vol. 2</h3>
+                    <p class="volume">Edizione Speciale · 50 Crucipuzzle</p>
+                    <p class="price">€14.00</p>
+                    <p class="features">Grandi romanzi e i loro autori - xilografie originali.</p>
+                    <span class="btn-view">Acquista →</span>
+                </div>
+            </a>
+            <a href="https://www.amazon.it/dp/B0GQZMN6PN" target="_blank" class="book-card letteratura">
+                <img src="https://m.media-amazon.com/images/I/81yPgKe7YLL._SL1293_.jpg" alt="Capolavori" class="book-cover">
+                <div class="book-info">
+                    <h3>📚 Capolavori Letteratura</h3>
+                    <p class="volume">Large Print · 50 Crucipuzzle</p>
+                    <p class="price">€14.00</p>
+                    <p class="features">50 opere immortali con curiosità bibliografiche.</p>
+                    <span class="btn-view">Acquista →</span>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="section-title">✈️ Diari di Viaggio</h2>
+        <div class="books-grid">
+            <a href="https://www.amazon.it/dp/B0GPX4R55Y" target="_blank" class="book-card venezia">
+                <img src="https://m.media-amazon.com/images/I/71xvirtual.jpg" alt="Venezia" class="book-cover">
+                <div class="book-info">
+                    <h3>🌹 Venezia</h3>
+                    <p class="volume">Piccoli Diari · 136 Pagine</p>
+                    <p class="price">€14.42</p>
+                    <p class="features">Diario creativo con playlist, quiz e spazi per schizzi.</p>
+                    <span class="btn-view">Acquista →</span>
+                </div>
+            </a>
+            <a href="https://www.amazon.it/dp/B0GQK4FMJ9" target="_blank" class="book-card newyork">
+                <img src="https://m.media-amazon.com/images/I/71xvirtual.jpg" alt="New York" class="book-cover">
+                <div class="book-info">
+                    <h3>🗽 New York</h3>
+                    <p class="volume">Piccoli Diari · 136 Pagine</p>
+                    <p class="price">€12.00</p>
+                    <p class="features">Taccuino per artisti e sognatori tra i grattacieli.</p>
+                    <span class="btn-view">Acquista →</span>
+                </div>
+            </a>
+            <a href="https://www.amazon.it/dp/B0GPQWZR8Y" target="_blank" class="book-card napoli">
+                <img src="https://m.media-amazon.com/images/I/71xvirtual.jpg" alt="Napoli" class="book-cover">
+                <div class="book-info">
+                    <h3>🍕 Napoli</h3>
+                    <p class="volume">Piccoli Diari · 136 Pagine</p>
+                    <p class="price">€9.99</p>
+                    <p class="features">Guida creativa con playlist, quiz e spazi per schizzi.</p>
+                    <span class="btn-view">Acquista →</span>
+                </div>
+            </a>
+        </div>
+
+        <footer class="footer">
+            <p>Libri venduti e spediti da Amazon · Reso entro 14 giorni</p>
+            <p style="margin-top: 10px;">Acquista con Carta Cultura Giovani, Carta del Merito, Carta del Docente e Carta della Cultura</p>
+        </footer>
+    </div>
+</body>
+</html>

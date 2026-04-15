@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parole Intrecciate - Collezione Bluetip Morley</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --orange: #FF6B00; --dark-orange: #CC5500; --purple: #6B2D5B;
+            --dark-purple: #4A1F3F; --gold: #D4AF37; --dark-gold: #B8860B;
+            --blue: #1E3A5F; --dark-blue: #0D1F33; --pink: #C71585; --green: #228B22;
+            --black: #1A1A1A; --cream: #FFF8E7;
+        }
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark-purple) 50%, var(--black) 100%);
+            min-height: 100vh;
+            color: var(--cream);
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 80px 20px; }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 600;
+            color: var(--orange);
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero .subtitle {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: var(--cream);
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .hero .author-line {
+            margin-top: 25px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 1px;
+        }
+        .hero .author-line span {
+            color: var(--orange);
+            font-weight: 500;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 35px;
+            margin: 50px 0;
+        }
+        .book-card {
+            background: linear-gradient(145deg, rgba(45,45,45,0.95), rgba(74,31,63,0.95));
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255,107,0,0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .book-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--orange);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        .book-card.odissea {
+            background: linear-gradient(145deg, rgba(30,58,95,0.95), rgba(13,31,51,0.95));
+            border-color: rgba(212,175,55,0.2);
+        }
+        .book-card.odissea:hover { border-color: var(--gold); }
+        .book-card.campania {
+            background: linear-gradient(145deg, rgba(34,139,34,0.3), rgba(13,31,51,0.95));
+            border-color: rgba(34,139,34,0.3);
+        }
+        .book-card.campania:hover { border-color: var(--green); }
+        .book-card.kamasutra {
+            background: linear-gradient(145deg, rgba(199,21,133,0.3), rgba(74,31,63,0.95));
+            border-color: rgba(199,21,133,0.3);
+        }
+        .book-card.kamasutra:hover { border-color: var(--pink); }
+        .book-cover {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+            background: #222;
+        }
+        .book-info { position: relative; z-index: 1; }
+        .book-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--cream);
+        }
+        .book-info .volume {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--orange);
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .book-card.odissea .volume, .book-card.odissea .price { color: var(--gold); }
+        .book-card.campania .volume, .book-card.campania .price { color: var(--green); }
+        .book-card.kamasutra .volume, .book-card.kamasutra .price { color: var(--pink); }
+        .book-info .price {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--orange);
+            margin-bottom: 15px;
+        }
+        .book-info .features {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+        .btn-view {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--orange), var(--dark-orange));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            margin-top: 18px;
+            box-shadow: 0 3px 15px rgba(255,107,0,0.3);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        .book-card.odissea .btn-view {
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            box-shadow: 0 3px 15px rgba(212,175,55,0.3);
+        }
+        .book-card.campania .btn-view {
+            background: linear-gradient(135deg, var(--green), #006400);
+            box-shadow: 0 3px 15px rgba(34,139,34,0.3);
+        }
+        .book-card.kamasutra .btn-view {
+            background: linear-gradient(135deg, var(--pink), #8B008B);
+            box-shadow: 0 3px 15px rgba(199,21,133,0.3);
+        }
+        .btn-view:hover { transform: scale(1.05); }
+        .footer {
+            text-align: center;
+            padding: 50px 20px;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+        .footer p { margin: 5px 0; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .books-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>Parole Intrecciate</h1>
+            <p class="subtitle">Collezione di libri enigmistici tematici per adulti e ragazzi</p>
+            <p class="author-line">di <span>Bluetip Morley</span> · La Quercia Edizioni</p>
+        </section>
+        <div class="books-grid">
+            <a href="halloween.html" class="book-card">
+                <img src="71KKesBoglL._SL1293_.jpg" alt="Halloween" class="book-cover">
+                <div class="book-info">
+                    <h3>🎃 Halloween</h3>
+                    <p class="volume">Volume 114 · 80 Crucipuzzle</p>
+                    <p class="price">€9.98</p>
+                    <p class="features">Scopri le origini e le leggende della Notte delle Streghe.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="odissea.html" class="book-card odissea">
+                <img src="81yPgKe7YLL._SL1293_.jpg" alt="L'Odissea" class="book-cover">
+                <div class="book-info">
+                    <h3>⚓ L'Odissea</h3>
+                    <p class="volume">Volume 126 · 80 Crucipuzzle</p>
+                    <p class="price">€13.42</p>
+                    <p class="features">Il viaggio di Ulisse verso Itaca. Mostri, dei e avventure.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="corpo-umano.html" class="book-card">
+                <img src="corpo-umano-cover.jpg" alt="Il Corpo Umano" class="book-cover">
+                <div class="book-info">
+                    <h3>🫀 Il Corpo Umano</h3>
+                    <p class="volume">Volume 123 · 80 Crucipuzzle</p>
+                    <p class="price">€8.52</p>
+                    <p class="features">Alla scoperta dei segreti dell'anatomia e della biologia.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="storia-italia.html" class="book-card">
+                <img src="placeholder-new.jpg" alt="Storia d'Italia" class="book-cover">
+                <div class="book-info">
+                    <h3>🇮🇹 Storia d'Italia</h3>
+                    <p class="volume">80 Schemi Tematici</p>
+                    <p class="price">€11.07</p>
+                    <p class="features">Viaggio nel tempo: Romani, Medioevo, Rinascimento, Risorgimento.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="campania.html" class="book-card campania">
+                <img src="placeholder-new.jpg" alt="La Campania" class="book-cover">
+                <div class="book-info">
+                    <h3>🍕 La Campania</h3>
+                    <p class="volume">Volume 128 · 80 Crucipuzzle</p>
+                    <p class="price">€10.23</p>
+                    <p class="features">Alla scoperta di Napoli, Pompei, Costiera Amalfitana.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="kamasutra.html" class="book-card kamasutra">
+                <img src="placeholder-new.jpg" alt="Kamasutra" class="book-cover">
+                <div class="book-info">
+                    <h3>💋 Kamasutra Coppie</h3>
+                    <p class="volume">80 Schemi Sensuali</p>
+                    <p class="price">€11.00</p>
+                    <p class="features">Giochi erotici e posizioni per ritrovare l'intimità.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+            <a href="donne.html" class="book-card">
+                <img src="placeholder-new.jpg" alt="Donne" class="book-cover">
+                <div class="book-info">
+                    <h3>✨ Donne - I Quattro Elementi</h3>
+                    <p class="volume">Volume 131 · 80 Schemi</p>
+                    <p class="price">€10.66</p>
+                    <p class="features">Citazioni motivazionali e sollievo mentale per donne.</p>
+                    <span class="btn-view">Scopri →</span>
+                </div>
+            </a>
+        </div>
+        <footer class="footer">
+            <p>Libri venduti e spediti da Amazon · Reso entro 14 giorni</p>
+            <p>Acquista con Carta Cultura Giovani, Carta del Merito, Carta del Docente e Carta della Cultura</p>
+        </footer>
+    </div>
+</body>
+</html>

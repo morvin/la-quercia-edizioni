@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contatti - La Quercia Edizioni. Mettiti in contatto con noi per domande, collaborazioni o informazioni sui nostri prodotti.">
+  <title>Contatti - La Quercia Edizioni</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232D5A3D' stroke-width='2'%3E%3Cpath d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/%3E%3Cpath d='M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        La Quercia Edizioni
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="catalogo.html" class="nav-link">Catalogo</a>
+        <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+        <a href="contatti.html" class="nav-link active">Contatti</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1 class="contact-hero-title">Contatti</h1>
+        <p class="section-subtitle">
+          Hai domande, proposte di collaborazione o vuoi sapere di più sui nostri prodotti?
+          Siamo qui per aiutarti.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <h2 class="contact-form-title">Inviaci un Messaggio</h2>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Nome e Cognome</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Mario Rossi" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="mario.rossi@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Oggetto</label>
+                <select id="subject" name="subject" class="form-select" required>
+                  <option value="">Seleziona un'opzione</option>
+                  <option value="info">Informazioni su un prodotto</option>
+                  <option value="collaboration">Proposta di collaborazione</option>
+                  <option value="press">Ufficio stampa</option>
+                  <option value="other">Altro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Messaggio</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Invia Messaggio
+              </button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="form-success">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <h3>Messaggio Inviato!</h3>
+              <p>
+                Grazie per averci contattato. Ti risponderemo il prima possibile
+                all'indirizzo email fornito.
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Email</h4>
+                <p class="contact-info-text">
+                  <a href="mailto:info@laquerciaedizioni.it">info@laquerciaedizioni.it</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Sede</h4>
+                <p class="contact-info-text">Roma, Italia</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Social Media</h4>
+                <p class="contact-info-text">
+                  Seguici su <a href="#">Instagram</a> e <a href="#">Facebook</a>
+                  per news e anteprime.
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Orari</h4>
+                <p class="contact-info-text">
+                  Rispondiamo alle email dal lunedì al venerdì,
+                  dalle 9:00 alle 18:00.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Domande Frequenti</h2>
+          <p class="section-subtitle">
+            Trova risposte rapide alle domande più comuni
+          </p>
+        </header>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="faq-item" style="margin-bottom: var(--space-6); padding: var(--space-6); background: var(--color-white); border-radius: var(--radius-md);">
+            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-3);">Dove posso acquistare i vostri libri?</h3>
+            <p style="color: var(--color-text-secondary);">
+              I nostri libri sono disponibili su Amazon e nei principali bookstore online.
+              Clicca sul pulsante "Acquista su Amazon" nella pagina del prodotto per essere
+              reindirizzato direttamente al prodotto.
+            </p>
+          </div>
+
+          <div class="faq-item" style="margin-bottom: var(--space-6); padding: var(--space-6); background: var(--color-white); border-radius: var(--radius-md);">
+            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-3);">Posso proporre un mio manoscritto?</h3>
+            <p style="color: var(--color-text-secondary);">
+              Siamo sempre interessati a nuovi progetti. Se hai un'idea o un manoscritto
+              che potrebbe rientrare nella nostra line-up, scrivici a
+              <a href="mailto:info@laquerciaedizioni.it" style="color: var(--color-primary);">info@laquerciaedizioni.it</a>
+              con una breve descrizione e un estratto del tuo lavoro.
+            </p>
+          </div>
+
+          <div class="faq-item" style="margin-bottom: var(--space-6); padding: var(--space-6); background: var(--color-white); border-radius: var(--radius-md);">
+            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-3);">Spedite all'estero?</h3>
+            <p style="color: var(--color-text-secondary);">
+              Essendo distribuiti principalmente attraverso Amazon, la disponibilità
+              di spedizione internazionale dipende dalle politiche di Amazon stesso.
+              Verifica la disponibilità nella pagina del prodotto desiderato.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+            </svg>
+            La Quercia Edizioni
+          </div>
+          <p class="footer-description">
+            Editore italiano specializzato in libri enigmistici, diari di viaggio e quaderni creativi.
+            Qualità artigianale e passione per la parola.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Categorie</h4>
+          <nav class="footer-links">
+            <a href="catalogo.html?category=Parole%20Intrecciate" class="footer-link">Parole Intrecciate</a>
+            <a href="catalogo.html?category=Diari%20di%20Viaggio" class="footer-link">Diari di Viaggio</a>
+            <a href="catalogo.html?category=Musica" class="footer-link">Musica</a>
+            <a href="catalogo.html?category=Quaderni" class="footer-link">Quaderni</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Info</h4>
+          <nav class="footer-links">
+            <a href="chi-siamo.html" class="footer-link">Chi Siamo</a>
+            <a href="contatti.html" class="footer-link">Contatti</a>
+            <a href="#" class="footer-link">Termini e Condizioni</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Contatti</h4>
+          <nav class="footer-links">
+            <span class="footer-link">info@laquerciaedizioni.it</span>
+            <span class="footer-link">Roma, Italia</span>
+          </nav>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 La Quercia Edizioni. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
